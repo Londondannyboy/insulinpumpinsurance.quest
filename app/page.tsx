@@ -94,7 +94,8 @@ export default function HomePage() {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&h=1080&crop=entropy"
-            alt="Diabetes technology insulin pump continuous glucose monitor medical device"
+            alt="Insulin pump insurance UK - diabetes device protection and CGM coverage"
+            title="Insulin Pump Insurance - Compare Quotes for Diabetes Device Cover"
             className="w-full h-full object-cover"
           />
           {/* Gradient Overlay */}
@@ -111,11 +112,11 @@ export default function HomePage() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
-            Protect Your Diabetes Technology
+            Compare <span className="text-cyan-400">Insulin Pump Insurance</span> Quotes from Specialist UK Providers
           </h1>
 
           <p className="text-lg sm:text-xl text-slate-300 mb-8">
-            With complete peace of mind from <strong>£6.95/month</strong>
+            Comprehensive <strong>insulin pump insurance</strong> protection with complete peace of mind from <strong>£6.95/month</strong>
           </p>
 
           <p className="text-lg text-slate-400 mb-8 max-w-2xl">
@@ -156,6 +157,13 @@ export default function HomePage() {
           >
             Get Quote Now
           </a>
+
+          {/* Image Caption & Description */}
+          <div className="mt-12 pt-8 border-t border-white/10">
+            <p className="text-sm text-slate-400 italic">
+              <strong>Insulin pump insurance</strong> protects your diabetes devices including insulin pumps (Medtronic, Omnipod, Tandem), continuous glucose monitors (Dexcom, FreeStyle Libre), and related diabetes technology from accidental damage, theft, and loss.
+            </p>
+          </div>
         </div>
       </section>
 
