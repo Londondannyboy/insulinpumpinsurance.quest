@@ -269,8 +269,12 @@ export default function Page() {
         </section>
 
         <section className="my-12 pt-8 border-t border-slate-700">
-          <h2 className="text-2xl font-bold text-white mb-4">Related Insurance Guides</h2>
+          <h2 className="text-2xl font-bold text-white mb-4">Related Resources</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/articles/aerial-yoga-insurance-explained" className="p-4 bg-purple-800/30 rounded-lg border border-purple-500/30 hover:border-purple-400/50 transition-colors">
+              <p className="font-semibold text-purple-400">📖 Aerial Yoga Insurance Guide</p>
+              <p className="text-sm text-slate-400">In-depth article on suspension equipment protection</p>
+            </Link>
             <Link href="/hot-yoga-insurance" className="p-4 bg-slate-800/50 rounded-lg border border-slate-700/50 hover:border-blue-500/50 transition-colors">
               <p className="font-semibold text-blue-400">🔥 Hot Yoga Insurance UK</p>
               <p className="text-sm text-slate-400">Specialized thermal conditions coverage</p>
@@ -286,6 +290,10 @@ export default function Page() {
             <Link href="/do-you-need-yoga-teacher-insurance" className="p-4 bg-slate-800/50 rounded-lg border border-slate-700/50 hover:border-blue-500/50 transition-colors">
               <p className="font-semibold text-blue-400">✓ Do You Need Yoga Teacher Insurance?</p>
               <p className="text-sm text-slate-400">Risk assessment for aerial yoga</p>
+            </Link>
+            <Link href="/articles/yoga-insurance-costs-guide" className="p-4 bg-slate-800/50 rounded-lg border border-slate-700/50 hover:border-blue-500/50 transition-colors">
+              <p className="font-semibold text-blue-400">📊 Complete Costs Breakdown</p>
+              <p className="text-sm text-slate-400">Detailed article on specialty yoga pricing</p>
             </Link>
           </div>
         </section>
