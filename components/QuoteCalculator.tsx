@@ -2,53 +2,84 @@
 
 import { useState, useMemo } from 'react'
 
-const TEACHING_TYPES = [
-  { value: 'solo', label: 'Solo Teaching', description: 'Independent 1-on-1 sessions' },
-  { value: 'studio', label: 'Studio Owner', description: 'Manage a yoga studio' },
-  { value: 'group', label: 'Group Classes', description: 'Teach multiple classes' },
-  { value: 'trainee', label: 'Trainee', description: 'Still completing training' },
+const DEVICE_TYPES = [
+  { value: 'insulin-pump', label: 'Insulin Pump', description: 'Pump device only' },
+  { value: 'cgm', label: 'CGM Only', description: 'Continuous glucose monitor' },
+  { value: 'pump-and-cgm', label: 'Pump & CGM', description: 'Complete system', popular: true },
+  { value: 'pdm', label: 'PDM/Handset', description: 'Personal diabetes manager' },
 ]
 
-const EXPERIENCE_LEVELS = [
-  { value: '0-2', label: '0-2 Years', description: 'Newly qualified' },
-  { value: '2-5', label: '2-5 Years', description: 'Growing experience' },
-  { value: '5+', label: '5+ Years', description: 'Experienced teacher' },
+const PUMP_BRANDS = [
+  { value: 'medtronic', label: 'Medtronic', description: '780G, 670G, 640G' },
+  { value: 'omnipod', label: 'Omnipod', description: 'Dash, 5' },
+  { value: 'tandem', label: 'Tandem', description: 't:slim X2' },
+  { value: 'ypsomed', label: 'Ypsomed', description: 'MyLife' },
+]
+
+const CGM_BRANDS = [
+  { value: 'dexcom', label: 'Dexcom', description: 'G6, G7' },
+  { value: 'freestyle', label: 'FreeStyle Libre', description: 'Libre 2, 3' },
+  { value: 'medtronic-cgm', label: 'Medtronic Guardian', description: 'Guardian 4' },
 ]
 
 const COVER_TYPES = [
-  { value: 'indemnity', label: 'Professional Indemnity', description: 'Coverage for negligence claims', multiplier: 0.8 },
-  { value: 'liability', label: 'Public Liability', description: 'Injury to students or property damage', multiplier: 1.0, popular: true },
-  { value: 'combined', label: 'Combined', description: 'Both professional indemnity & public liability', multiplier: 1.3 },
+  { value: 'comprehensive', label: 'Comprehensive', description: 'Accidental damage, theft, loss & liquid damage', multiplier: 1.0, popular: true },
+  { value: 'accidental', label: 'Accidental Damage Only', description: 'Drops, knocks and liquid damage', multiplier: 0.7 },
+  { value: 'theft', label: 'Theft & Loss', description: 'Theft and loss coverage only', multiplier: 0.6 },
+]
+
+const COVERAGE_AMOUNTS = [
+  { value: '2000', label: '£2,000', multiplier: 0.8 },
+  { value: '3000', label: '£3,000', multiplier: 0.9 },
+  { value: '5000', label: '£5,000', multiplier: 1.0 },
+  { value: '7500', label: '£7,500', multiplier: 1.1 },
+  { value: '10000', label: '£10,000', multiplier: 1.2 },
+]
+
+const EXCESS_OPTIONS = [
+  { value: '0', label: '£0 Excess', multiplier: 1.15 },
+  { value: '25', label: '£25 Excess', multiplier: 1.0 },
+  { value: '50', label: '£50 Excess', multiplier: 0.85 },
+  { value: '100', label: '£100 Excess', multiplier: 0.7 },
 ]
 
 const ADDITIONAL_OPTIONS = [
-  { value: 'yoga-alliance', label: 'Yoga Alliance Membership Insurance', description: 'Insurance via Yoga Alliance register' },
-  { value: 'cyber', label: 'Cyber Insurance', description: 'Protection for online/digital classes' },
+  { value: 'accessories', label: 'Accessories Cover', description: 'Transmitters, sensors, infusion sets' },
+  { value: 'worldwide', label: 'Worldwide Cover', description: '90 days per year travel coverage' },
+  { value: 'loan-equipment', label: 'Loan Equipment', description: 'Cover for loan devices' },
 ]
 
-function estimatePremium(experienceLevel: string, coverType: string, additionalOptions: string[]) {
-  // Base premium varies by experience level and cover type
-  const basePremium: Record<string, number> = {
-    '0-2': 25,
-    '2-5': 20,
-    '5+': 18,
-  }
+function estimatePremium(
+  coverType: string,
+  coverageAmount: string,
+  excess: string,
+  additionalOptions: string[]
+) {
+  // Base premium for insulin pump insurance
+  const baseMonthly = 7.50
 
-  const baseMonthly = basePremium[experienceLevel] || 20
-  const coverMultiplier = COVER_TYPES.find(c => c.value === coverType)?.multiplier || 1
+  // Apply cover type multiplier
+  const coverMultiplier = COVER_TYPES.find(c => c.value === coverType)?.multiplier || 1.0
 
-  // Calculate monthly with cover type multiplier
-  const monthlyAfterCover = baseMonthly * coverMultiplier
+  // Apply coverage amount multiplier
+  const coverageMultiplier = COVERAGE_AMOUNTS.find(c => c.value === coverageAmount)?.multiplier || 1.0
+
+  // Apply excess multiplier
+  const excessMultiplier = EXCESS_OPTIONS.find(e => e.value === excess)?.multiplier || 1.0
+
+  // Calculate monthly premium
+  let monthlyAfterMultipliers = baseMonthly * coverMultiplier * coverageMultiplier * excessMultiplier
 
   // Add additional options
   let additionalMonthly = 0
-  if (additionalOptions.includes('yoga-alliance')) additionalMonthly += 3
-  if (additionalOptions.includes('cyber')) additionalMonthly += 4
+  if (additionalOptions.includes('accessories')) additionalMonthly += 1.50
+  if (additionalOptions.includes('worldwide')) additionalMonthly += 2.00
+  if (additionalOptions.includes('loan-equipment')) additionalMonthly += 1.00
 
-  const totalMonthly = monthlyAfterCover + additionalMonthly
+  const totalMonthly = monthlyAfterMultipliers + additionalMonthly
 
-  // Add some variance for realism
-  const monthlyVariance = totalMonthly * 0.15
+  // Add some variance for realism (10% variance)
+  const monthlyVariance = totalMonthly * 0.10
 
   return {
     monthly: { low: Math.floor(totalMonthly - monthlyVariance), high: Math.ceil(totalMonthly + monthlyVariance) },
@@ -62,21 +93,24 @@ function formatCurrency(amount: number) {
 
 export function QuoteCalculator() {
   const [step, setStep] = useState(1)
-  const [teachingType, setTeachingType] = useState('group')
-  const [experienceLevel, setExperienceLevel] = useState('2-5')
-  const [coverType, setCoverType] = useState('liability')
+  const [deviceType, setDeviceType] = useState('pump-and-cgm')
+  const [pumpBrand, setPumpBrand] = useState('medtronic')
+  const [cgmBrand, setCgmBrand] = useState('dexcom')
+  const [coverType, setCoverType] = useState('comprehensive')
+  const [coverageAmount, setCoverageAmount] = useState('5000')
+  const [excess, setExcess] = useState('25')
   const [additionalOptions, setAdditionalOptions] = useState<string[]>([])
   const [showEstimate, setShowEstimate] = useState(false)
 
   const premium = useMemo(
-    () => estimatePremium(experienceLevel, coverType, additionalOptions),
-    [experienceLevel, coverType, additionalOptions]
+    () => estimatePremium(coverType, coverageAmount, excess, additionalOptions),
+    [coverType, coverageAmount, excess, additionalOptions]
   )
 
   const canProceed = () => {
     switch (step) {
-      case 1: return teachingType
-      case 2: return coverType
+      case 1: return deviceType && pumpBrand && cgmBrand
+      case 2: return coverType && coverageAmount && excess
       default: return true
     }
   }
@@ -99,9 +133,9 @@ export function QuoteCalculator() {
               onClick={() => s < step && setStep(s)}
               className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-all ${
                 s === step
-                  ? 'bg-blue-500 text-white'
+                  ? 'bg-cyan-500 text-white'
                   : s < step
-                  ? 'bg-blue-500/30 text-blue-400 cursor-pointer hover:bg-blue-500/50'
+                  ? 'bg-cyan-500/30 text-cyan-400 cursor-pointer hover:bg-cyan-500/50'
                   : 'bg-slate-700 text-slate-400'
               }`}
             >
@@ -114,7 +148,7 @@ export function QuoteCalculator() {
               )}
             </button>
             {s < 3 && (
-              <div className={`w-16 sm:w-24 h-1 mx-2 rounded ${s < step ? 'bg-blue-500/50' : 'bg-slate-700'}`} />
+              <div className={`w-16 sm:w-24 h-1 mx-2 rounded ${s < step ? 'bg-cyan-500/50' : 'bg-slate-700'}`} />
             )}
           </div>
         ))}
@@ -122,30 +156,35 @@ export function QuoteCalculator() {
 
       {/* Step Labels */}
       <div className="flex justify-between mb-8 text-sm text-slate-400 px-2">
-        <span className={step === 1 ? 'text-blue-400' : ''}>Your Profile</span>
-        <span className={step === 2 ? 'text-blue-400' : ''}>Coverage</span>
-        <span className={step === 3 ? 'text-blue-400' : ''}>Get Quotes</span>
+        <span className={step === 1 ? 'text-cyan-400' : ''}>Your Devices</span>
+        <span className={step === 2 ? 'text-cyan-400' : ''}>Coverage Options</span>
+        <span className={step === 3 ? 'text-cyan-400' : ''}>Quote Summary</span>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Form Section */}
         <div className="lg:col-span-2 space-y-6">
-          {/* Step 1: Teaching Details */}
+          {/* Step 1: Device Selection */}
           {step === 1 && (
             <div className="space-y-6">
               <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-700/50">
-                <h3 className="text-lg font-semibold text-white mb-4">How Do You Teach?</h3>
+                <h3 className="text-lg font-semibold text-white mb-4">What Device Are You Insuring?</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {TEACHING_TYPES.map((type) => (
+                  {DEVICE_TYPES.map((type) => (
                     <button
                       key={type.value}
-                      onClick={() => setTeachingType(type.value)}
-                      className={`p-4 rounded-xl text-left transition-all ${
-                        teachingType === type.value
-                          ? 'bg-blue-500/20 border-2 border-blue-500'
+                      onClick={() => setDeviceType(type.value)}
+                      className={`p-4 rounded-xl text-left transition-all relative ${
+                        deviceType === type.value
+                          ? 'bg-cyan-500/20 border-2 border-cyan-500'
                           : 'bg-slate-700/30 border-2 border-transparent hover:bg-slate-700/50'
                       }`}
                     >
+                      {type.popular && (
+                        <span className="absolute -top-2 right-2 px-2 py-0.5 bg-cyan-500 text-white text-xs font-semibold rounded-full">
+                          Popular
+                        </span>
+                      )}
                       <span className="text-sm font-medium text-white block">{type.label}</span>
                       <span className="text-xs text-slate-400 mt-1 block">{type.description}</span>
                     </button>
@@ -154,20 +193,40 @@ export function QuoteCalculator() {
               </div>
 
               <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-700/50">
-                <h3 className="text-lg font-semibold text-white mb-4">Experience Level</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                  {EXPERIENCE_LEVELS.map((level) => (
+                <h3 className="text-lg font-semibold text-white mb-4">Insulin Pump Brand</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {PUMP_BRANDS.map((brand) => (
                     <button
-                      key={level.value}
-                      onClick={() => setExperienceLevel(level.value)}
+                      key={brand.value}
+                      onClick={() => setPumpBrand(brand.value)}
                       className={`p-4 rounded-xl text-left transition-all ${
-                        experienceLevel === level.value
-                          ? 'bg-blue-500/20 border-2 border-blue-500'
+                        pumpBrand === brand.value
+                          ? 'bg-cyan-500/20 border-2 border-cyan-500'
                           : 'bg-slate-700/30 border-2 border-transparent hover:bg-slate-700/50'
                       }`}
                     >
-                      <span className="text-sm font-medium text-white block">{level.label}</span>
-                      <span className="text-xs text-slate-400 mt-1 block">{level.description}</span>
+                      <span className="text-sm font-medium text-white block">{brand.label}</span>
+                      <span className="text-xs text-slate-400 mt-1 block">{brand.description}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-700/50">
+                <h3 className="text-lg font-semibold text-white mb-4">CGM System</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {CGM_BRANDS.map((brand) => (
+                    <button
+                      key={brand.value}
+                      onClick={() => setCgmBrand(brand.value)}
+                      className={`p-4 rounded-xl text-left transition-all ${
+                        cgmBrand === brand.value
+                          ? 'bg-cyan-500/20 border-2 border-cyan-500'
+                          : 'bg-slate-700/30 border-2 border-transparent hover:bg-slate-700/50'
+                      }`}
+                    >
+                      <span className="text-sm font-medium text-white block">{brand.label}</span>
+                      <span className="text-xs text-slate-400 mt-1 block">{brand.description}</span>
                     </button>
                   ))}
                 </div>
@@ -179,7 +238,7 @@ export function QuoteCalculator() {
           {step === 2 && (
             <div className="space-y-6">
               <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-700/50">
-                <h3 className="text-lg font-semibold text-white mb-4">Choose Your Coverage</h3>
+                <h3 className="text-lg font-semibold text-white mb-4">Choose Your Coverage Type</h3>
                 <div className="space-y-3">
                   {COVER_TYPES.map((type) => (
                     <button
@@ -187,13 +246,13 @@ export function QuoteCalculator() {
                       onClick={() => setCoverType(type.value)}
                       className={`w-full text-left p-4 rounded-xl transition-all relative ${
                         coverType === type.value
-                          ? 'bg-blue-500/20 border-2 border-blue-500'
+                          ? 'bg-cyan-500/20 border-2 border-cyan-500'
                           : 'bg-slate-700/30 border-2 border-transparent hover:bg-slate-700/50'
                       }`}
                     >
                       {type.popular && (
-                        <span className="absolute -top-2 right-4 px-2 py-0.5 bg-blue-500 text-white text-xs font-semibold rounded-full">
-                          Recommended
+                        <span className="absolute -top-2 right-4 px-2 py-0.5 bg-cyan-500 text-white text-xs font-semibold rounded-full">
+                          Most Popular
                         </span>
                       )}
                       <div className="font-medium text-white">{type.label}</div>
@@ -204,7 +263,46 @@ export function QuoteCalculator() {
               </div>
 
               <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-700/50">
-                <h3 className="text-lg font-semibold text-white mb-4">Additional Coverage</h3>
+                <h3 className="text-lg font-semibold text-white mb-4">Coverage Amount</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {COVERAGE_AMOUNTS.map((amount) => (
+                    <button
+                      key={amount.value}
+                      onClick={() => setCoverageAmount(amount.value)}
+                      className={`p-4 rounded-xl text-left transition-all ${
+                        coverageAmount === amount.value
+                          ? 'bg-cyan-500/20 border-2 border-cyan-500'
+                          : 'bg-slate-700/30 border-2 border-transparent hover:bg-slate-700/50'
+                      }`}
+                    >
+                      <span className="text-sm font-medium text-white block">{amount.label}</span>
+                      <span className="text-xs text-slate-400 mt-1 block">Coverage limit</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-700/50">
+                <h3 className="text-lg font-semibold text-white mb-4">Excess Amount</h3>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                  {EXCESS_OPTIONS.map((exc) => (
+                    <button
+                      key={exc.value}
+                      onClick={() => setExcess(exc.value)}
+                      className={`p-3 rounded-xl text-center transition-all ${
+                        excess === exc.value
+                          ? 'bg-cyan-500/20 border-2 border-cyan-500'
+                          : 'bg-slate-700/30 border-2 border-transparent hover:bg-slate-700/50'
+                      }`}
+                    >
+                      <span className="text-sm font-medium text-white block">{exc.label}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-700/50">
+                <h3 className="text-lg font-semibold text-white mb-4">Add Optional Extras</h3>
                 <div className="space-y-3">
                   {ADDITIONAL_OPTIONS.map((opt) => (
                     <label key={opt.value} className="flex items-start gap-4 cursor-pointer group">
@@ -216,7 +314,7 @@ export function QuoteCalculator() {
                           className="sr-only"
                         />
                         <div className={`w-6 h-6 rounded-lg border-2 flex items-center justify-center transition-all ${
-                          additionalOptions.includes(opt.value) ? 'bg-blue-500 border-blue-500' : 'border-slate-500 group-hover:border-slate-400'
+                          additionalOptions.includes(opt.value) ? 'bg-cyan-500 border-cyan-500' : 'border-slate-500 group-hover:border-slate-400'
                         }`}>
                           {additionalOptions.includes(opt.value) && (
                             <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -243,21 +341,34 @@ export function QuoteCalculator() {
                 <h3 className="text-lg font-semibold text-white mb-4">Your Quote Summary</h3>
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Teaching Style</span>
-                    <span className="text-white">{TEACHING_TYPES.find(t => t.value === teachingType)?.label}</span>
+                    <span className="text-slate-400">Device Type</span>
+                    <span className="text-white">{DEVICE_TYPES.find(t => t.value === deviceType)?.label}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Experience</span>
-                    <span className="text-white">{EXPERIENCE_LEVELS.find(e => e.value === experienceLevel)?.label}</span>
+                    <span className="text-slate-400">Pump Brand</span>
+                    <span className="text-white">{PUMP_BRANDS.find(b => b.value === pumpBrand)?.label}</span>
                   </div>
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">CGM System</span>
+                    <span className="text-white">{CGM_BRANDS.find(b => b.value === cgmBrand)?.label}</span>
+                  </div>
+                  <div className="border-t border-slate-700 my-3"></div>
                   <div className="flex justify-between">
                     <span className="text-slate-400">Coverage Type</span>
                     <span className="text-white">{COVER_TYPES.find(c => c.value === coverType)?.label}</span>
                   </div>
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">Coverage Amount</span>
+                    <span className="text-white">{COVERAGE_AMOUNTS.find(a => a.value === coverageAmount)?.label}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">Excess</span>
+                    <span className="text-white">{EXCESS_OPTIONS.find(e => e.value === excess)?.label}</span>
+                  </div>
                   {additionalOptions.length > 0 && (
                     <div className="flex justify-between">
-                      <span className="text-slate-400">Additional</span>
-                      <span className="text-blue-400">{additionalOptions.length} option(s)</span>
+                      <span className="text-slate-400">Extra Coverage</span>
+                      <span className="text-cyan-400">{additionalOptions.length} option(s) selected</span>
                     </div>
                   )}
                 </div>
@@ -281,7 +392,7 @@ export function QuoteCalculator() {
                 disabled={!canProceed()}
                 className={`flex-1 py-4 rounded-xl font-semibold transition-colors ${
                   canProceed()
-                    ? 'bg-blue-500 text-white hover:bg-blue-600'
+                    ? 'bg-cyan-500 text-white hover:bg-cyan-600'
                     : 'bg-slate-700 text-slate-400 cursor-not-allowed'
                 }`}
               >
@@ -290,7 +401,7 @@ export function QuoteCalculator() {
             ) : (
               <button
                 onClick={() => setShowEstimate(true)}
-                className="flex-1 py-4 rounded-xl font-semibold bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+                className="flex-1 py-4 rounded-xl font-semibold bg-cyan-500 text-white hover:bg-cyan-600 transition-colors"
               >
                 Get Quote Estimates
               </button>
@@ -301,13 +412,13 @@ export function QuoteCalculator() {
         {/* Estimate Panel */}
         <div className="lg:col-span-1">
           <div className="sticky top-24">
-            <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-2xl p-6 border border-blue-500/30">
+            <div className="bg-gradient-to-br from-cyan-500/20 to-teal-600/20 rounded-2xl p-6 border border-cyan-500/30">
               <div className="text-center">
                 <div className="text-sm text-slate-400 mb-1">Estimated Monthly Premium</div>
                 <div className="text-4xl font-bold text-white mb-1">
                   {formatCurrency(premium.monthly.low)} - {formatCurrency(premium.monthly.high)}
                 </div>
-                <div className="text-sm text-blue-400">per month</div>
+                <div className="text-sm text-cyan-400">per month</div>
                 <div className="text-xs text-slate-500 mt-2">
                   ({formatCurrency(premium.annual.low)} - {formatCurrency(premium.annual.high)} per year)
                 </div>
@@ -315,22 +426,22 @@ export function QuoteCalculator() {
 
               <div className="mt-6 pt-6 border-t border-slate-600/50 space-y-3 text-sm">
                 <div className="flex items-center gap-2 text-slate-300">
-                  <svg className="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  Professional protection
+                  Accidental damage cover
                 </div>
                 <div className="flex items-center gap-2 text-slate-300">
-                  <svg className="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  Student protection
+                  Theft & loss protection
                 </div>
                 <div className="flex items-center gap-2 text-slate-300">
-                  <svg className="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  UK specialist providers
+                  Fast claims processing
                 </div>
               </div>
 
@@ -343,16 +454,16 @@ export function QuoteCalculator() {
               <div className="mt-4 bg-slate-800/50 rounded-2xl p-6 border border-slate-700/50">
                 <h4 className="font-semibold text-white mb-3">Get Accurate Quotes</h4>
                 <p className="text-sm text-slate-400 mb-4">
-                  Compare quotes from specialist yoga teacher insurance providers in the UK.
+                  Compare quotes from specialist insulin pump insurance providers in the UK.
                 </p>
                 <a
                   href="#providers"
-                  className="block w-full text-center py-3 rounded-xl font-semibold bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+                  className="block w-full text-center py-3 rounded-xl font-semibold bg-cyan-500 text-white hover:bg-cyan-600 transition-colors"
                 >
-                  Compare Providers
+                  Get Full Quotes
                 </a>
                 <p className="text-xs text-slate-500 mt-3 text-center">
-                  View detailed quotes from Yoga Alliance, Balens & more
+                  View detailed quotes from insurance specialists
                 </p>
               </div>
             )}

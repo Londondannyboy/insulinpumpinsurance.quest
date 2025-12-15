@@ -12,43 +12,45 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Yoga Teacher Insurance UK 2025 | Compare Quotes from £15/month",
-    template: "%s | Yoga Teacher Insurance UK"
+    default: "Insulin Pump Insurance UK 2025 | Compare Diabetes Device Cover from £6.95/month",
+    template: "%s | Insulin Pump Insurance UK"
   },
-  description: "Yoga teacher insurance UK - compare quotes from specialist providers. Get professional indemnity & public liability insurance for yoga instructors, trainers & studio owners. Quotes from leading insurers.",
+  description: "Insulin pump insurance UK - compare quotes from specialist providers. Get comprehensive diabetes device cover for insulin pumps, CGM systems & diabetes technology. Protect your devices from £6.95/month.",
   keywords: [
-    "yoga teacher insurance",
-    "yoga teacher insurance uk",
-    "yoga instructor insurance",
-    "insurance for yoga teachers",
-    "insurance for yoga teachers uk",
-    "yoga teachers insurance",
-    "professional indemnity yoga",
-    "yoga teacher liability insurance",
-    "yoga studio insurance",
-    "best yoga teacher insurance uk",
-    "compare yoga teacher insurance",
-    "yoga training insurance"
+    "insulin pump insurance",
+    "insulin pump insurance uk",
+    "diabetes pump insurance",
+    "CGM insurance",
+    "continuous glucose monitor insurance",
+    "omnipod insurance",
+    "medtronic pump insurance",
+    "tandem tslim insurance",
+    "dexcom insurance",
+    "freestyle libre insurance",
+    "diabetes device insurance",
+    "insulin pump cover",
+    "best insulin pump insurance uk",
+    "compare insulin pump insurance"
   ],
-  authors: [{ name: "Yoga Teacher Insurance UK" }],
-  creator: "Yoga Teacher Insurance UK",
-  publisher: "Yoga Teacher Insurance UK",
-  metadataBase: new URL("https://yogateacherinsurance.quest"),
+  authors: [{ name: "Insulin Pump Insurance UK" }],
+  creator: "Insulin Pump Insurance UK",
+  publisher: "Insulin Pump Insurance UK",
+  metadataBase: new URL("https://insulinpumpinsurance.quest"),
   alternates: {
-    canonical: "https://yogateacherinsurance.quest",
+    canonical: "https://insulinpumpinsurance.quest",
   },
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://yogateacherinsurance.quest",
-    siteName: "Yoga Teacher Insurance UK",
-    title: "Yoga Teacher Insurance UK 2025 | Compare Quotes",
-    description: "Yoga teacher insurance UK - compare quotes from specialist providers. Get professional indemnity & public liability insurance for yoga instructors & studio owners.",
+    url: "https://insulinpumpinsurance.quest",
+    siteName: "Insulin Pump Insurance UK",
+    title: "Insulin Pump Insurance UK 2025 | Compare Diabetes Device Cover",
+    description: "Insulin pump insurance UK - compare quotes from specialist providers. Get comprehensive diabetes device cover for insulin pumps, CGM systems & diabetes technology.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Yoga Teacher Insurance UK | Compare Quotes",
-    description: "Yoga teacher insurance from UK specialists. Compare quotes for yoga instructors, trainers & studio owners.",
+    title: "Insulin Pump Insurance UK | Compare Diabetes Device Cover",
+    description: "Insulin pump insurance from UK specialists. Compare quotes for comprehensive diabetes device cover.",
   },
   robots: {
     index: true,
@@ -66,40 +68,40 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://yogateacherinsurance.quest/#website",
-  name: "Yoga Teacher Insurance UK",
-  alternateName: ["Yoga Instructor Insurance UK", "Insurance for Yoga Teachers", "Professional Indemnity Yoga"],
-  url: "https://yogateacherinsurance.quest",
-  description: "Yoga teacher insurance UK comparison service. Get professional indemnity & public liability insurance for yoga instructors, trainers & studio owners from specialist UK insurers.",
+  "@id": "https://insulinpumpinsurance.quest/#website",
+  name: "Insulin Pump Insurance UK",
+  alternateName: ["Diabetes Device Insurance UK", "Insurance for Insulin Pumps", "CGM Insurance UK"],
+  url: "https://insulinpumpinsurance.quest",
+  description: "Insulin pump insurance UK comparison service. Get comprehensive diabetes device cover for insulin pumps, CGM systems & diabetes technology from specialist UK insurers.",
   inLanguage: "en-GB",
   publisher: {
     "@type": "Organization",
-    name: "Yoga Teacher Insurance UK",
-    url: "https://yogateacherinsurance.quest"
+    name: "Insulin Pump Insurance UK",
+    url: "https://insulinpumpinsurance.quest"
   }
 }
 
 const serviceJsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://yogateacherinsurance.quest/#service",
-  name: "Yoga Teacher Insurance UK Comparison",
-  alternateName: "Insurance for Yoga Teachers Comparison",
-  description: "Compare yoga teacher insurance UK quotes from specialist providers. Find professional indemnity & public liability insurance for yoga instructors, trainers & studio owners. Compare Yoga Alliance, Balens, specialist providers and more.",
+  "@id": "https://insulinpumpinsurance.quest/#service",
+  name: "Insulin Pump Insurance UK Comparison",
+  alternateName: "Diabetes Device Insurance Comparison",
+  description: "Compare insulin pump insurance UK quotes from specialist providers. Find comprehensive diabetes device cover for insulin pumps (Medtronic, Omnipod, Tandem), CGM systems (Dexcom, FreeStyle Libre), and diabetes technology.",
   provider: {
     "@type": "Organization",
-    name: "Yoga Teacher Insurance UK"
+    name: "Insulin Pump Insurance UK"
   },
   areaServed: {
     "@type": "Country",
     name: "United Kingdom"
   },
-  serviceType: "Yoga Teacher Insurance Comparison",
+  serviceType: "Insulin Pump Insurance Comparison",
   offers: {
     "@type": "Offer",
     price: "0",
     priceCurrency: "GBP",
-    description: "Free yoga teacher insurance quotes UK"
+    description: "Free insulin pump insurance quotes UK from £6.95/month"
   }
 }
 
@@ -110,8 +112,8 @@ const breadcrumbJsonLd = {
     {
       "@type": "ListItem",
       position: 1,
-      name: "Yoga Teacher Insurance",
-      item: "https://yogateacherinsurance.quest"
+      name: "Insulin Pump Insurance",
+      item: "https://insulinpumpinsurance.quest"
     }
   ]
 }

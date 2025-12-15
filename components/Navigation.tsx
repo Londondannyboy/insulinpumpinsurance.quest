@@ -9,7 +9,7 @@ export function Navigation() {
   const navLinks = [
     { href: '#calculator', label: 'Get Quote' },
     { href: '#coverage', label: 'Coverage' },
-    { href: '#providers', label: 'Providers' },
+    { href: '#devices', label: 'Devices' },
     { href: '#faq', label: 'FAQ' },
     { href: '/articles', label: 'Articles' },
   ]
@@ -19,16 +19,14 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m0 0l-2-1m2 1v2.5M14 4l-2 1m0 0l-2-1m2 1v2.5" />
-              </svg>
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center">
+              <span className="text-xl">💉</span>
             </div>
             <div>
               <span className="text-xl font-bold text-white">
-                Yoga Teacher <span className="text-blue-400">Insurance</span>
+                Insulin Pump <span className="text-cyan-400">Insurance</span>
               </span>
-              <p className="text-xs text-slate-400 hidden sm:block">UK Professional Cover</p>
+              <p className="text-xs text-slate-400 hidden sm:block">UK Diabetes Device Cover</p>
             </div>
           </Link>
 
