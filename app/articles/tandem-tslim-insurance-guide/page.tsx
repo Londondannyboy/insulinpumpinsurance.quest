@@ -124,7 +124,7 @@ export default function ArticlePage() {
               <p className="text-slate-400 text-sm mb-2">
                 t:slim X2 is among the most expensive pumps. A dropped or damaged device represents a £3,500-4,500 loss without insurance—or a 24-hour replacement with insurance.
               </p>
-              <p className="text-cyan-400 text-sm"><strong>Insurance value:</strong> Protection against catastrophic cost</strong></p>
+              <p className="text-cyan-400 text-sm"><strong>Insurance value:</strong> Protection against catastrophic cost</p>
             </div>
 
             <div className="bg-slate-800/50 rounded-lg p-6 border border-cyan-500/30">
