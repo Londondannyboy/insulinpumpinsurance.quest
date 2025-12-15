@@ -295,6 +295,112 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Common Claim Scenarios - Educational Examples */}
+      <section className="py-16 px-4 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 text-center">Common Insulin Pump Insurance Claims</h2>
+          <p className="text-slate-400 text-center mb-12">Understanding typical damage scenarios helps you assess your insurance needs. These are educational examples based on common pump damage patterns.</p>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Scenario 1: Holiday Damage */}
+            <div className="bg-slate-800/50 rounded-xl p-6 border border-cyan-500/30">
+              <div className="mb-4">
+                <span className="text-3xl">🏖️</span>
+                <span className="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs ml-2">
+                  Typical cost: £3,800
+                </span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Holiday Accident</h3>
+              <p className="text-slate-400 text-sm mb-4">
+                <strong className="text-slate-300">Example scenario:</strong> A Medtronic 780G falls from a beach bag onto marble tiles. The screen cracks and stops responding. Without insurance, full replacement cost applies.
+              </p>
+              <div className="border-t border-slate-700 pt-4">
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-slate-500">Typical claim timeline:</span>
+                    <span className="text-cyan-400">24 hours</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-slate-500">Without insurance:</span>
+                    <span className="text-red-400">£3,800 + weeks wait</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-slate-500">With insurance:</span>
+                    <span className="text-green-400">£0-£100 excess only</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Scenario 2: Liquid Damage */}
+            <div className="bg-slate-800/50 rounded-xl p-6 border border-cyan-500/30">
+              <div className="mb-4">
+                <span className="text-3xl">💧</span>
+                <span className="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs ml-2">
+                  Typical cost: £2,400
+                </span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Coffee Spill Damage</h3>
+              <p className="text-slate-400 text-sm mb-4">
+                <strong className="text-slate-300">Example scenario:</strong> An Omnipod 5 PDM is damaged by spilled coffee at breakfast. Liquid penetrates the device causing complete failure. This is one of the most common pump damage types.
+              </p>
+              <div className="border-t border-slate-700 pt-4">
+                <div className="text-sm space-y-2">
+                  <div className="text-slate-300">
+                    <strong className="text-cyan-400">Insurance ROI example:</strong>
+                  </div>
+                  <div>12 months premiums (£8.50/mo): <span className="text-white">£102</span></div>
+                  <div>Claim value: <span className="text-green-400">£2,400</span></div>
+                  <div className="text-cyan-400 font-semibold">Return: 23.5x</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Scenario 3: Theft */}
+            <div className="bg-slate-800/50 rounded-xl p-6 border border-cyan-500/30">
+              <div className="mb-4">
+                <span className="text-3xl">🔒</span>
+                <span className="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs ml-2">
+                  Typical cost: £4,200
+                </span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Stolen Equipment</h3>
+              <p className="text-slate-400 text-sm mb-4">
+                <strong className="text-slate-300">Example scenario:</strong> A Tandem t:slim X2 is stolen from a gym locker. With a police crime reference number, insurance typically covers full replacement while NHS processes can take weeks.
+              </p>
+              <div className="border-t border-slate-700 pt-4">
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-center gap-2 text-green-400">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Police report required
+                  </div>
+                  <div className="flex items-center gap-2 text-green-400">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Fast claim processing typical
+                  </div>
+                  <div className="flex items-center gap-2 text-green-400">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Avoids NHS replacement wait
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 p-6 bg-cyan-900/20 border border-cyan-500/30 rounded-xl">
+            <p className="text-slate-400 text-sm text-center">
+              <strong className="text-white">Note:</strong> These are hypothetical examples for educational purposes, showing common damage scenarios and typical costs. Actual claim experiences vary by insurer and individual circumstances. Replacement costs based on current UK market prices for insulin pump devices.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Devices Section */}
       <section id="devices" className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
@@ -305,13 +411,22 @@ export default function HomePage() {
               <h3 className="text-xl font-semibold text-white mb-4">Insulin Pumps</h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-center gap-2">
-                  <span className="text-cyan-400">•</span> Medtronic 780G, 670G, 640G
+                  <span className="text-cyan-400">•</span>
+                  <a href="/medtronic-insulin-pump-insurance" className="hover:text-cyan-400 transition-colors">
+                    Medtronic 780G, 670G, 640G
+                  </a>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-cyan-400">•</span> Omnipod Dash & Omnipod 5
+                  <span className="text-cyan-400">•</span>
+                  <a href="/omnipod-insurance" className="hover:text-cyan-400 transition-colors">
+                    Omnipod Dash & Omnipod 5
+                  </a>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-cyan-400">•</span> Tandem t:slim X2
+                  <span className="text-cyan-400">•</span>
+                  <a href="/tandem-tslim-insurance" className="hover:text-cyan-400 transition-colors">
+                    Tandem t:slim X2
+                  </a>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-cyan-400">•</span> Ypsomed MyLife
@@ -326,10 +441,16 @@ export default function HomePage() {
               <h3 className="text-xl font-semibold text-white mb-4">CGM Systems</h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-center gap-2">
-                  <span className="text-cyan-400">•</span> Dexcom G6 & G7
+                  <span className="text-cyan-400">•</span>
+                  <a href="/dexcom-cgm-insurance" className="hover:text-cyan-400 transition-colors">
+                    Dexcom G6 & G7
+                  </a>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-cyan-400">•</span> Abbott FreeStyle Libre 2 & 3
+                  <span className="text-cyan-400">•</span>
+                  <a href="/freestyle-libre-insurance" className="hover:text-cyan-400 transition-colors">
+                    Abbott FreeStyle Libre 2 & 3
+                  </a>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-cyan-400">•</span> Medtronic Guardian 4
@@ -359,6 +480,131 @@ export default function HomePage() {
                   <span className="text-cyan-400">•</span> Loan equipment
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cost of NOT Having Insurance - Visual ROI */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 text-center">
+            The True Cost of Going Uninsured
+          </h2>
+          <p className="text-slate-400 text-center mb-12">
+            One accident could cost more than years of premium payments
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Left: With Insurance */}
+            <div className="bg-gradient-to-br from-green-900/30 to-slate-800/50 rounded-2xl p-8 border border-green-500/30">
+              <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <span className="text-3xl">✓</span> With Insurance
+              </h3>
+
+              <div className="space-y-4 mb-6">
+                <div className="flex justify-between items-center">
+                  <span className="text-slate-300">Monthly Premium:</span>
+                  <span className="text-xl font-bold text-white">£8.50</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-slate-300">Annual Cost:</span>
+                  <span className="text-xl font-bold text-white">£102</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-slate-300">Typical Excess:</span>
+                  <span className="text-xl font-bold text-white">£50</span>
+                </div>
+              </div>
+
+              <div className="border-t border-green-500/30 pt-4 mb-6">
+                <div className="text-center">
+                  <div className="text-sm text-slate-400 mb-2">Your Cost if Pump Breaks:</div>
+                  <div className="text-4xl font-bold text-green-400">£50</div>
+                  <div className="text-sm text-slate-500 mt-1">(just the excess)</div>
+                </div>
+              </div>
+
+              <div className="bg-green-500/10 rounded-lg p-4">
+                <div className="text-sm text-green-400 font-semibold mb-2">✓ Benefits:</div>
+                <ul className="space-y-1 text-xs text-slate-300">
+                  <li>• 24-hour replacement processing</li>
+                  <li>• £50 maximum out-of-pocket</li>
+                  <li>• Worldwide travel coverage (90 days)</li>
+                  <li>• Peace of mind: £3,500 protected</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Right: Without Insurance */}
+            <div className="bg-gradient-to-br from-red-900/30 to-slate-800/50 rounded-2xl p-8 border border-red-500/30">
+              <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <span className="text-3xl">✗</span> Without Insurance
+              </h3>
+
+              <div className="space-y-4 mb-6">
+                <div className="flex justify-between items-center">
+                  <span className="text-slate-300">Monthly Premium:</span>
+                  <span className="text-xl font-bold text-white">£0</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-slate-300">Annual Cost:</span>
+                  <span className="text-xl font-bold text-white">£0</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-slate-300">If nothing happens:</span>
+                  <span className="text-xl font-bold text-green-400">£0 spent</span>
+                </div>
+              </div>
+
+              <div className="border-t border-red-500/30 pt-4 mb-6">
+                <div className="text-center">
+                  <div className="text-sm text-slate-400 mb-2">Your Cost if Pump Breaks:</div>
+                  <div className="text-4xl font-bold text-red-400">£3,500</div>
+                  <div className="text-sm text-slate-500 mt-1">(full replacement cost)</div>
+                </div>
+              </div>
+
+              <div className="bg-red-500/10 rounded-lg p-4">
+                <div className="text-sm text-red-400 font-semibold mb-2">✗ Risks:</div>
+                <ul className="space-y-1 text-xs text-slate-300">
+                  <li>• NHS wait: 4-12 weeks typically</li>
+                  <li>• £3,500+ out-of-pocket if damaged</li>
+                  <li>• No travel protection</li>
+                  <li>• You're financially liable for NHS pumps</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* ROI Visual */}
+          <div className="mt-8 bg-slate-800/50 rounded-xl p-8 border border-cyan-500/30">
+            <h3 className="text-xl font-bold text-white mb-6 text-center">
+              Insurance ROI: Understanding the Numbers
+            </h3>
+
+            <div className="grid md:grid-cols-3 gap-6 text-center mb-6">
+              <div>
+                <div className="text-sm text-slate-400 mb-2">5 Years of Premiums</div>
+                <div className="text-3xl font-bold text-cyan-400">£510</div>
+                <div className="text-xs text-slate-500 mt-1">(£8.50/month × 60 months)</div>
+              </div>
+              <div>
+                <div className="text-sm text-slate-400 mb-2">One Pump Replacement</div>
+                <div className="text-3xl font-bold text-red-400">£3,500</div>
+                <div className="text-xs text-slate-500 mt-1">(average mid-range pump)</div>
+              </div>
+              <div>
+                <div className="text-sm text-slate-400 mb-2">Potential Savings</div>
+                <div className="text-3xl font-bold text-green-400">£2,990</div>
+                <div className="text-xs text-slate-500 mt-1">(if one claim in 5 years)</div>
+              </div>
+            </div>
+
+            <div className="text-center text-sm text-slate-400 bg-slate-900/50 rounded-lg p-4">
+              Insurance pays for itself with <strong className="text-white">just one claim</strong> in approximately 6.9 years at current rates.
+              <br />
+              <span className="text-cyan-400">Industry data suggests</span> most pump users experience at least one accidental damage incident every 4-5 years.
             </div>
           </div>
         </div>
@@ -458,6 +704,106 @@ export default function HomePage() {
                 <p className="text-slate-400 mt-4">{item.a}</p>
               </details>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* People Also Ask - Extended FAQ */}
+      <section className="py-16 px-4 bg-slate-800/20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 text-center">
+            People Also Ask About Insulin Pump Insurance
+          </h2>
+          <p className="text-slate-400 text-center mb-12">
+            Common questions from pump users across the UK
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            <details className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 group">
+              <summary className="font-semibold text-white cursor-pointer list-none flex justify-between items-center">
+                Does insulin pump insurance cover Medtronic 780G?
+                <span className="text-cyan-400 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="text-slate-400 mt-4 text-sm">
+                Yes, specialist insulin pump insurance covers all Medtronic models including the 780G, 670G, and 640G. Coverage includes the pump, transmitter, and integrated CGM components. You can insure NHS-provided or privately purchased Medtronic pumps.
+              </p>
+            </details>
+
+            <details className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 group">
+              <summary className="font-semibold text-white cursor-pointer list-none flex justify-between items-center">
+                Can I claim for pump damage while travelling abroad?
+                <span className="text-cyan-400 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="text-slate-400 mt-4 text-sm">
+                Absolutely. Comprehensive policies include 90 days of worldwide travel coverage per year. If your pump is damaged, lost, or stolen abroad, file a claim via phone or email. Most insurers provide 24-hour emergency support and some offer loan equipment during international travel.
+              </p>
+            </details>
+
+            <details className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 group">
+              <summary className="font-semibold text-white cursor-pointer list-none flex justify-between items-center">
+                What happens if I drop my Omnipod PDM?
+                <span className="text-cyan-400 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="text-slate-400 mt-4 text-sm">
+                If you drop your Omnipod Personal Diabetes Manager (PDM) and it's damaged, insurance covers the full replacement cost (typically £1,800-£2,400). File a claim with photos of the damage, and most insurers will approve and arrange replacement within 24 hours.
+              </p>
+            </details>
+
+            <details className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 group">
+              <summary className="font-semibold text-white cursor-pointer list-none flex justify-between items-center">
+                Does insurance cover Dexcom G7 receivers and transmitters?
+                <span className="text-cyan-400 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="text-slate-400 mt-4 text-sm">
+                Yes. CGM-specific insurance covers Dexcom receivers, transmitters, and sensors. Many pump insurance policies also bundle CGM coverage at a discounted rate (typically £10-12/month for pump + CGM vs £8 + £6 separately).
+              </p>
+            </details>
+
+            <details className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 group">
+              <summary className="font-semibold text-white cursor-pointer list-none flex justify-between items-center">
+                Will my premium increase if I make a claim?
+                <span className="text-cyan-400 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="text-slate-400 mt-4 text-sm">
+                Most specialist diabetes device insurers do NOT increase premiums after a single claim. However, multiple claims in a short period (typically 3+ in 12 months) may affect renewal rates. Always check your specific policy's claims history terms before purchasing.
+              </p>
+            </details>
+
+            <details className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 group">
+              <summary className="font-semibold text-white cursor-pointer list-none flex justify-between items-center">
+                Can children and teenagers get insulin pump insurance?
+                <span className="text-cyan-400 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="text-slate-400 mt-4 text-sm">
+                Yes, there's no age limit. Children and teenagers using insulin pumps can be insured, often at the same rates as adults. Parents or guardians manage the policy. Some insurers offer specialized coverage considerations for school and sports activities.
+              </p>
+            </details>
+
+            <details className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 group">
+              <summary className="font-semibold text-white cursor-pointer list-none flex justify-between items-center">
+                Is liquid damage from rain or swimming covered?
+                <span className="text-cyan-400 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="text-slate-400 mt-4 text-sm">
+                Accidental liquid damage is covered, including rain exposure or accidental submersion. However, intentional swimming or water sports without proper waterproof protection may not be covered. Always check your policy for specific water sports exclusions.
+              </p>
+            </details>
+
+            <details className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 group">
+              <summary className="font-semibold text-white cursor-pointer list-none flex justify-between items-center">
+                How much excess do I pay when claiming?
+                <span className="text-cyan-400 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="text-slate-400 mt-4 text-sm">
+                Excess options typically range from £0 to £100. Lower excess means slightly higher monthly premiums. For example: £0 excess might be £10/month, while £50 excess could be £8/month. Choose based on your risk tolerance and budget preferences.
+              </p>
+            </details>
+          </div>
+
+          <div className="mt-8 text-center">
+            <a href="/articles" className="text-cyan-400 hover:text-cyan-300 font-semibold transition-colors">
+              Read all 14 insurance guides →
+            </a>
           </div>
         </div>
       </section>
