@@ -141,6 +141,25 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} antialiased bg-slate-900 text-white`}>
         <Navigation />
+
+        {/* Beta Disclaimer Banner */}
+        <div className="bg-gradient-to-r from-cyan-900/40 to-blue-900/40 border-b border-cyan-500/30 py-3 px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 mt-0.5">
+                <svg className="w-5 h-5 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <p className="text-sm text-slate-200">
+                  <strong className="text-white">Site in Development:</strong> This website is currently in beta and under active development. All information is provided for educational purposes and should not be considered medical or financial advice. For medical guidance about insulin pumps or diabetes management, consult your healthcare team or visit <a href="https://www.nhs.uk/conditions/type-1-diabetes/" target="_blank" rel="noopener noreferrer" className="text-cyan-300 hover:text-cyan-200 underline">NHS Type 1 Diabetes guidance</a>. Insurance information should be verified with providers directly before making decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <main className="min-h-screen">
           {children}
         </main>
