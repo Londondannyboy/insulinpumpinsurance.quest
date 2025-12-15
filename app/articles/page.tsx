@@ -97,17 +97,30 @@ export default function ArticlesPage() {
 
   return (
     <main className="min-h-screen bg-slate-900 text-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 to-slate-900 py-12 md:py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Yoga Teacher Insurance <span className="text-blue-400">Articles & Guides</span>
+      {/* Hero Section with Yoga Background */}
+      <section className="relative py-24 sm:py-32 px-4 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1920&h=1080&fit=crop&q=80"
+            alt="Expert yoga teacher insurance articles guides resources"
+            className="w-full h-full object-cover"
+          />
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/85 to-slate-900/75"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
+            Expert Articles & Guides
+            <span className="block bg-gradient-to-r from-blue-300 to-blue-400 bg-clip-text text-transparent mt-2">Yoga Teacher Insurance Resources</span>
           </h1>
-          <p className="text-xl text-slate-300 mb-8">
-            Expert guides on yoga teacher insurance, coverage options, costs, and provider comparisons. Stay informed about protecting your yoga teaching practice.
+          <p className="text-xl text-slate-100 mb-4 font-light">
+            Comprehensive guides on yoga teacher insurance, coverage options, and protection strategies
           </p>
-          <p className="text-slate-400">
-            Comprehensive resources for yoga instructors, trainers, and studio owners in the UK.
+          <p className="text-slate-300">
+            Expert resources for yoga instructors, trainers, and studio owners in the UK
           </p>
         </div>
       </section>

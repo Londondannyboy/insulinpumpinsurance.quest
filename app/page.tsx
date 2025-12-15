@@ -130,9 +130,20 @@ export default function HomePage() {
         <QuoteCalculator />
       </section>
 
-      {/* Why Insurance Section */}
-      <section id="coverage" className="py-16 px-4 bg-slate-800/30">
-        <div className="max-w-6xl mx-auto">
+      {/* Why Insurance Section with Yoga Background */}
+      <section id="coverage" className="relative py-16 px-4 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1588286840104-8957b019727f?w=1920&h=1080&fit=crop&q=80"
+            alt="yoga studio class practice meditation mindfulness wellness"
+            className="w-full h-full object-cover"
+          />
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/92 to-slate-900/95"></div>
+        </div>
+
+        <div className="relative z-10 max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold text-white text-center mb-4">
             Why Do Yoga Teachers Need Insurance?
           </h2>
@@ -434,9 +445,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Who Needs Yoga Insurance Section */}
-      <section className="py-16 px-4 bg-gradient-to-br from-slate-800/20 to-blue-900/10">
-        <div className="max-w-6xl mx-auto">
+      {/* Who Needs Yoga Insurance Section with Yoga Background */}
+      <section className="relative py-16 px-4 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1920&h=1080&fit=crop&q=80"
+            alt="peaceful yoga meditation mindfulness practice wellness"
+            className="w-full h-full object-cover"
+          />
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/90 to-slate-900/95"></div>
+        </div>
+
+        <div className="relative z-10 max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold text-white text-center mb-12">
             Who Needs Yoga Teacher Insurance?
           </h2>
