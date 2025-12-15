@@ -120,7 +120,7 @@ export default function HomePage() {
           </p>
 
           <p className="text-lg text-slate-400 mb-8 max-w-2xl">
-            Comprehensive insurance for insulin pumps, CGM systems & diabetes devices. Get fast claims processing, worldwide travel cover, and protection for your essential diabetes technology.
+            While the <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">NHS provides insulin pumps</a> to eligible patients, specialist insurance offers faster replacement (24 hours vs weeks), covers accidental damage, theft, and provides worldwide travel protection for your essential diabetes technology.
           </p>
 
           {/* Feature Badges */}
@@ -161,7 +161,7 @@ export default function HomePage() {
           {/* Image Caption & Description */}
           <div className="mt-12 pt-8 border-t border-white/10">
             <p className="text-sm text-slate-400 italic">
-              <strong>Insulin pump insurance</strong> protects your diabetes devices including insulin pumps (Medtronic, Omnipod, Tandem), continuous glucose monitors (Dexcom, FreeStyle Libre), and related diabetes technology from accidental damage, theft, and loss.
+              <strong>Insulin pump insurance</strong> protects your diabetes devices including insulin pumps (Medtronic, Omnipod, Tandem), continuous glucose monitors (Dexcom, FreeStyle Libre), and related diabetes technology from accidental damage, theft, and loss. According to <a href="https://www.diabetes.org.uk/guide-to-diabetes/managing-your-diabetes/treating-your-diabetes/insulin-pumps" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Diabetes UK</a>, insulin pumps can significantly improve blood glucose management for people with Type 1 diabetes.
             </p>
           </div>
         </div>
@@ -220,7 +220,7 @@ export default function HomePage() {
             <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-700/50 hover:border-cyan-500/30 transition-all">
               <div className="text-3xl mb-3">⚙️</div>
               <h3 className="text-xl font-semibold text-white mb-3">Fast Claims</h3>
-              <p className="text-slate-400">Specialist insurers process claims in 24 hours vs. weeks for NHS replacement. Get back to your normal routine quickly.</p>
+              <p className="text-slate-400">Specialist insurers process claims in 24 hours vs. weeks for NHS replacement. According to <a href="https://breakthrought1d.org.uk/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Breakthrough T1D</a>, timely access to diabetes technology is crucial for optimal glucose management.</p>
             </div>
           </div>
         </div>
@@ -652,6 +652,12 @@ export default function HomePage() {
                 </tr>
               </tbody>
             </table>
+          </div>
+
+          <div className="mt-8 p-4 bg-slate-900/50 rounded-lg border border-slate-700/50">
+            <p className="text-sm text-slate-400 text-center">
+              <strong className="text-white">Note:</strong> The <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">NHS provides insulin pumps</a> to eligible patients through local diabetes teams. Specialist insurance policies are regulated by the <a href="https://www.fca.org.uk/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Financial Conduct Authority (FCA)</a> and complement NHS provision with faster replacement and additional coverage options.
+            </p>
           </div>
         </div>
       </section>
