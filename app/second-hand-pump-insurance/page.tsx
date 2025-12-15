@@ -237,7 +237,7 @@ export default function Page() {
               </tr>
               <tr>
                 <td className="py-3 px-3 text-slate-300 text-xs">⭐ Same rates regardless of pump age</td>
-                <td colSpan="2" className="text-center py-3 px-3 text-cyan-400 text-sm font-semibold">Coverage is identical to new pump coverage</td>
+                <td colSpan={2} className="text-center py-3 px-3 text-cyan-400 text-sm font-semibold">Coverage is identical to new pump coverage</td>
               </tr>
             </tbody>
           </table>
