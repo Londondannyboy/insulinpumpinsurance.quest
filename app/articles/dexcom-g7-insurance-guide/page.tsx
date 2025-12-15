@@ -91,7 +91,7 @@ export default function ArticlePage() {
           <h2 className="text-3xl font-bold mb-6">Why Dexcom G7 Needs Insurance</h2>
 
           <p className="text-lg text-slate-300 leading-relaxed mb-6">
-            The Dexcom G7 is among the most advanced continuous glucose monitors available, providing 15-minute real-time glucose alerts and sharing capability. Its advanced features make it expensive to replace—insurance protects this investment and ensures uninterrupted glucose monitoring.
+            The Dexcom G7 is among the most advanced continuous glucose monitors available, providing 15-minute real-time glucose alerts and sharing capability. Its advanced features make it expensive to replace—<a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance coverage</a> protects this investment and ensures uninterrupted glucose monitoring for people managing <a href="https://www.diabetes.org.uk/guide-to-diabetes/managing-your-diabetes/treating-your-diabetes/insulin-pumps" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">diabetes with insulin pumps</a>.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">Dexcom G7 Components Covered</h3>
@@ -196,7 +196,7 @@ export default function ArticlePage() {
           </p>
 
           <p className="text-slate-300 leading-relaxed">
-            Dexcom G7 gives you unparalleled glucose visibility—insurance ensures nothing interrupts that view. For less than a coffee per week, you protect continuous glucose monitoring from the accidents that actually happen.
+            Dexcom G7 gives you unparalleled glucose visibility—<a href="/" className="text-cyan-400 hover:text-cyan-300 underline">are insulin pumps covered by insurance</a> ensures nothing interrupts that view. For less than a coffee per week, you protect continuous glucose monitoring from the accidents that actually happen.
           </p>
         </div>
       </section>

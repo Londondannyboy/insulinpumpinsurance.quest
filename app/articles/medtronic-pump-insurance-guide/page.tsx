@@ -134,7 +134,7 @@ export default function ArticlePage() {
           <h3 className="text-2xl font-bold mb-4 mt-8">Why Medtronic Users Need Insurance</h3>
 
           <p className="text-slate-300 leading-relaxed mb-4">
-            Medtronic pumps are frequently used on the NHS and widely available privately. Whether you use 780G's advanced automation or the reliable 670G, insurance protects you from scenarios that can interrupt your therapy.
+            Medtronic pumps are frequently <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">used on the NHS</a> and widely available privately. Whether you use 780G's advanced automation or the reliable 670G, <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insurance for insulin pumps</a> protects you from scenarios that can interrupt your therapy.
           </p>
 
           <ul className="space-y-3 mb-6 text-slate-300">
@@ -247,7 +247,7 @@ export default function ArticlePage() {
           <h3 className="text-2xl font-bold mb-4 mt-8">Conclusion</h3>
 
           <p className="text-slate-300 leading-relaxed">
-            Whether you use a Medtronic 780G with the latest automation or a reliable 670G on the NHS, specialist insurance protects you from catastrophic replacement costs and ensures 24-hour replacement if something goes wrong. At just £8-10/month for comprehensive coverage, it's an essential investment in your diabetes management security.
+            Whether you use a Medtronic 780G with the latest automation or a reliable 670G on the NHS, specialist <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance UK</a> protects you from catastrophic replacement costs and ensures 24-hour replacement if something goes wrong. For comprehensive information on managing diabetes with insulin pumps, visit <a href="https://www.diabetes.org.uk/guide-to-diabetes/managing-your-diabetes/treating-your-diabetes/insulin-pumps" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Diabetes UK</a>. At just £8-10/month for comprehensive coverage, it's an essential investment in your diabetes management security.
           </p>
         </div>
       </section>

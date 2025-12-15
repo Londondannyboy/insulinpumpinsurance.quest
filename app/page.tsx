@@ -671,7 +671,7 @@ export default function HomePage() {
             {[
               {
                 q: 'Are insulin pumps covered by insurance?',
-                a: 'The NHS provides insulin pumps but replacement times vary. Specialist insurance ensures fast replacement (24 hours) and covers scenarios where NHS replacement may not apply. It\'s an ideal complement to NHS coverage.'
+                a: 'Yes - insurance plans that cover insulin pumps and supplies are available from specialist UK providers. For people with type 1 diabetes, the NHS provides pumps but specialist insurance offers faster replacement (24 hours vs weeks), covers accidental damage, theft, and loss. Comprehensive insulin pump insurance coverage for type 1 diabetes starts from £6.95/month and complements NHS provision.'
               },
               {
                 q: 'How much does insulin pump insurance cost?',

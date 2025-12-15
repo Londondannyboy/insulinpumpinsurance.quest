@@ -97,7 +97,7 @@ export default function ArticlePage() {
           <h2 className="text-3xl font-bold mb-6">Omnipod-Specific Insurance Considerations</h2>
 
           <p className="text-lg text-slate-300 leading-relaxed mb-6">
-            Omnipod's tubeless design offers different benefits and risks compared to traditional tubed pumps. Your insurance needs to reflect these unique characteristics.
+            Omnipod's tubeless design offers different benefits and risks compared to traditional tubed pumps. Your <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insurance for insulin pumps</a> needs to reflect these unique characteristics. For information on NHS pump provision, see <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">NHS insulin pump guidance</a>.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">What Makes Omnipod Different</h3>
@@ -222,7 +222,7 @@ export default function ArticlePage() {
           </p>
 
           <p className="text-slate-300 leading-relaxed">
-            Omnipod's freedom and flexibility is one of its key advantages—don't let damage anxiety limit your activities. Insurance ensures you can use your Omnipod to its full potential knowing you're protected.
+            Omnipod's freedom and flexibility is one of its key advantages—don't let damage anxiety limit your activities. <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">Insulin pump insurance coverage</a> ensures you can use your Omnipod to its full potential knowing you're protected.
           </p>
         </div>
       </section>

@@ -112,7 +112,7 @@ export default function ArticlePage() {
           <h2 className="text-3xl font-bold mb-6 mt-0">Understanding the Insurance Provider Landscape</h2>
 
           <p className="text-lg text-slate-300 leading-relaxed mb-6">
-            The UK insulin pump insurance market has grown significantly, with multiple specialist providers now offering competitive coverage. Unlike general medical insurance, these providers specialize specifically in diabetes technology protection, understanding the unique risks and needs of pump users.
+            The UK <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance</a> market has grown significantly, with multiple specialist providers now offering competitive coverage. Unlike general medical insurance, these providers specialize specifically in diabetes technology protection, understanding the unique risks and needs of pump users managing <a href="https://www.diabetes.org.uk/guide-to-diabetes/managing-your-diabetes/treating-your-diabetes/insulin-pumps" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">diabetes with insulin pumps</a>.
           </p>
 
           <p className="text-lg text-slate-300 leading-relaxed mb-6">
@@ -293,7 +293,7 @@ export default function ArticlePage() {
           </p>
 
           <p className="text-slate-300 leading-relaxed">
-            Use our comparison tools to get quotes from multiple providers, read reviews from other pump users, and verify coverage details before committing. The small investment in finding the right provider now pays dividends when you need to make a claim.
+            Use our comparison tools to get quotes from multiple providers, read reviews from other pump users, and verify coverage details before committing. For consumer protection information, visit the <a href="https://www.fca.org.uk/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Financial Conduct Authority</a>. The small investment in finding the right <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance UK</a> provider now pays dividends when you need to make a claim.
           </p>
         </div>
       </section>

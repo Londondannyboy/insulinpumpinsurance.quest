@@ -253,7 +253,7 @@ export default function ArticlePage() {
           <h3 className="text-2xl font-bold mb-4 mt-8">Conclusion</h3>
 
           <p className="text-slate-300 leading-relaxed">
-            If your pump is stolen, act quickly: report to police immediately, then call your insurer within 24 hours. With a crime reference number and proof of ownership, most theft claims are approved and replacements arranged within 24 hours. Insurance protects you from the £3,000-6,000 replacement cost and ensures you're not without pump therapy for long.
+            If your pump is stolen, act quickly: report to police immediately, then call your insurer within 24 hours. With a crime reference number and proof of ownership, most theft claims are approved and replacements arranged within 24 hours. <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">Insulin pump insurance</a> protects you from the £3,000-6,000 replacement cost and ensures you're not without pump therapy for long. For additional diabetes support, visit <a href="https://www.diabetes.org.uk/guide-to-diabetes/managing-your-diabetes/treating-your-diabetes/insulin-pumps" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Diabetes UK</a>.
           </p>
         </div>
       </section>

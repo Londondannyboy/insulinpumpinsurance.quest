@@ -91,7 +91,7 @@ export default function ArticlePage() {
           <h2 className="text-3xl font-bold mb-6">The Key Difference</h2>
 
           <p className="text-lg text-slate-300 leading-relaxed mb-6">
-            Many insulin pump users think "My pump has a warranty, so I don't need insurance." This is a critical mistake. Warranty and insurance serve completely different purposes and cover different scenarios.
+            Many insulin pump users think "My pump has a warranty, so I don't need insurance." This is a critical mistake. Warranty and insurance serve completely different purposes and cover different scenarios. Understanding the difference is essential for anyone managing diabetes with <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">insulin pumps</a>, and comprehensive <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance</a> provides the protection warranties don't.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">What Pump Warranty Covers</h3>
@@ -252,7 +252,7 @@ export default function ArticlePage() {
           </p>
 
           <p className="text-slate-300 leading-relaxed">
-            For complete protection covering your pump's entire lifespan, against both manufacturing defects AND accidental damage, you need both. The small cost of insurance is minimal protection against catastrophic replacement costs and treatment interruption.
+            For complete protection covering your pump's entire lifespan, against both manufacturing defects AND accidental damage, you need both. According to <a href="https://www.diabetes.org.uk/guide-to-diabetes/managing-your-diabetes/treating-your-diabetes/insulin-pumps" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Diabetes UK</a>, having the right cover is crucial. The small cost of <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance UK</a> is minimal protection against catastrophic replacement costs and treatment interruption.
           </p>
         </div>
       </section>

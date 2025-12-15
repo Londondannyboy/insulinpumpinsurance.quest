@@ -92,7 +92,7 @@ export default function ArticlePage() {
           <h2 className="text-3xl font-bold mb-6">Home Insurance Add-On vs Specialist Coverage</h2>
 
           <p className="text-lg text-slate-300 leading-relaxed mb-6">
-            Most UK homeowners can add insulin pump coverage to their home or contents insurance. But should you? This guide compares both options so you can choose the right coverage for your needs.
+            Most UK homeowners can add <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump</a> coverage to their home or contents insurance. But should you? This guide compares both options so you can choose the right <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance coverage</a> for your needs.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">Option 1: Home Insurance Add-On</h3>
@@ -335,7 +335,7 @@ export default function ArticlePage() {
           </p>
 
           <p className="text-slate-300 leading-relaxed">
-            Home insurance add-ons are convenient if you already have home insurance, but they don't compare to specialist coverage for diabetes devices. Save money, get better coverage, and get faster claims—choose specialist insurance every time.
+            Home insurance add-ons are convenient if you already have home insurance, but they don't compare to specialist coverage for diabetes devices. For consumer protection guidance, visit the <a href="https://www.fca.org.uk/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Financial Conduct Authority</a>. Save money, get better coverage, and get faster claims—choose specialist <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance UK</a> every time.
           </p>
         </div>
       </section>

@@ -117,7 +117,7 @@ export default function ArticlePage() {
           <h2 className="text-3xl font-bold mb-6 mt-0">Understanding Insulin Pump Insurance Pricing</h2>
 
           <p className="text-lg text-slate-300 leading-relaxed mb-6">
-            One of the first questions insulin pump users ask when considering specialist insurance is: "How much will it cost?" The answer is reassuringly straightforward—insulin pump insurance is one of the most affordable medical device protection products available in the UK. However, pricing does depend on several factors specific to your device and coverage needs.
+            One of the first questions <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump users</a> ask when considering specialist insurance is: "How much will it cost?" The answer is reassuringly straightforward—<a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance</a> is one of the most affordable medical device protection products available in the UK. However, pricing does depend on several factors specific to your device and coverage needs.
           </p>
 
           <p className="text-lg text-slate-300 leading-relaxed mb-6">
@@ -368,7 +368,7 @@ export default function ArticlePage() {
           </p>
 
           <p className="text-slate-300 leading-relaxed">
-            By understanding pricing factors and shopping around for quotes, you can find coverage that matches both your needs and budget. The investment is small, the protection is substantial, and the peace of mind is invaluable. Whether you're managing diabetes with an NHS pump or a privately-purchased device, insurance ensures that accidents never interrupt your diabetes management.
+            By understanding pricing factors and shopping around for quotes, you can find coverage that matches both your needs and budget. For guidance on insurance regulation, visit the <a href="https://www.fca.org.uk/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Financial Conduct Authority</a>. The investment is small, the protection is substantial, and the peace of mind is invaluable. Whether you're managing diabetes with an NHS pump or a privately-purchased device, <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance UK</a> ensures that accidents never interrupt your diabetes management.
           </p>
         </div>
       </section>

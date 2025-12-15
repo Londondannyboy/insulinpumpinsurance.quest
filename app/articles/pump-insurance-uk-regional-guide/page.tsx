@@ -206,7 +206,7 @@ export default function ArticlePage() {
           </p>
 
           <p className="text-slate-300 leading-relaxed">
-            Whether you're in England, Scotland, Wales, or Northern Ireland, your insulin pump insurance works the same way: same coverage, same claims process, same 24-hour replacement, and same prices.
+            Whether you're in England, Scotland, Wales, or Northern Ireland, your <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance coverage</a> works the same way: same coverage, same claims process, same 24-hour replacement, and same prices. For information about NHS pump provision, visit <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">NHS insulin pump guidance</a>.
           </p>
         </div>
       </section>

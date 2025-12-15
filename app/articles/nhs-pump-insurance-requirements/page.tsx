@@ -95,7 +95,7 @@ export default function ArticlePage() {
           <h2 className="text-3xl font-bold mb-6">Why NHS Pump Users Need Insurance</h2>
 
           <p className="text-lg text-slate-300 leading-relaxed mb-6">
-            Getting your insulin pump on the NHS is a significant advantage—it removes the £4,000-6,000 cost of purchasing a device privately. However, NHS provision doesn't remove your financial responsibility if something goes wrong with your pump after you receive it.
+            Getting your <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump on the NHS</a> is a significant advantage—it removes the £4,000-6,000 cost of purchasing a device privately. However, NHS provision doesn't remove your financial responsibility if something goes wrong with your pump after you receive it.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">Your Financial Responsibility</h3>
@@ -197,11 +197,11 @@ export default function ArticlePage() {
           <h3 className="text-2xl font-bold mb-4 mt-8">Recommendation for NHS Pump Users</h3>
 
           <p className="text-slate-300 leading-relaxed mb-4">
-            Get specialist insurance immediately after receiving your NHS pump. The NHS provides the device, but insurance protects you from financial liability and provides the fast replacement your diabetes management requires. For just £8-10/month, you eliminate the risk of a £3,500+ bill.
+            Get specialist <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance</a> immediately after receiving your NHS pump. The NHS provides the device, but insurance protects you from financial liability and provides the fast replacement your diabetes management requires. For just £8-10/month, you eliminate the risk of a £3,500+ bill.
           </p>
 
           <p className="text-slate-300 leading-relaxed">
-            Don't assume "I got it on the NHS, so I don't need insurance." You absolutely do. Insurance bridges the gap between NHS provision and your financial responsibility for loss, theft, and damage.
+            Don't assume "I got it on the NHS, so I don't need insurance." You absolutely do. According to <a href="https://www.diabetes.org.uk/guide-to-diabetes/managing-your-diabetes/treating-your-diabetes/insulin-pumps" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Diabetes UK</a>, comprehensive <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance coverage</a> bridges the gap between NHS provision and your financial responsibility for loss, theft, and damage.
           </p>
         </div>
       </section>

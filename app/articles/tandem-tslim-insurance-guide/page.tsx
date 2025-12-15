@@ -97,7 +97,7 @@ export default function ArticlePage() {
           <h2 className="text-3xl font-bold mb-6">Why Tandem t:slim Users Need Insurance</h2>
 
           <p className="text-lg text-slate-300 leading-relaxed mb-6">
-            Tandem's t:slim X2 with Control-IQ is one of the most advanced insulin pumps available—and one of the most expensive to replace (£3,500-4,500). Insurance protects this significant investment while ensuring you maintain automated insulin delivery without interruption.
+            Tandem's t:slim X2 with Control-IQ is one of the most advanced <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">insulin pumps</a> available—and one of the most expensive to replace (£3,500-4,500). <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">Insulin pump insurance coverage</a> protects this significant investment while ensuring you maintain automated insulin delivery without interruption.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">What's Special About t:slim Protection</h3>
@@ -221,7 +221,7 @@ export default function ArticlePage() {
           </p>
 
           <p className="text-slate-300 leading-relaxed">
-            At £8-12/month, insurance protects a £3,500+ investment and ensures your advanced diabetes technology never interrupts due to accidents. Control-IQ users especially should prioritize insurance to maintain automated management continuity.
+            At £8-12/month, <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insurance for insulin pumps</a> protects a £3,500+ investment and ensures your advanced diabetes technology never interrupts due to accidents. For more information on managing type 1 diabetes, visit <a href="https://breakthrought1d.org.uk/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Breakthrough T1D</a>. Control-IQ users especially should prioritize insurance to maintain automated management continuity.
           </p>
         </div>
       </section>

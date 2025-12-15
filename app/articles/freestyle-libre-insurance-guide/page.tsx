@@ -94,7 +94,7 @@ export default function ArticlePage() {
           <h2 className="text-3xl font-bold mb-6">FreeStyle Libre Insurance Overview</h2>
 
           <p className="text-lg text-slate-300 leading-relaxed mb-6">
-            FreeStyle Libre 2 and 3 readers are affordable glucose monitoring devices—but dropping or damaging your reader means losing glucose visibility. Insurance protects this critical device at the lowest CGM insurance rates available in the UK.
+            FreeStyle Libre 2 and 3 readers are affordable glucose monitoring devices—but dropping or damaging your reader means losing glucose visibility. <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">Insulin pump insurance</a> protects this critical device at the lowest CGM insurance rates available in the UK. For more information on diabetes management, visit <a href="https://www.diabetes.org.uk/guide-to-diabetes/managing-your-diabetes/treating-your-diabetes/insulin-pumps" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Diabetes UK</a>.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">What's Covered</h3>
@@ -201,7 +201,7 @@ export default function ArticlePage() {
           </p>
 
           <p className="text-slate-300 leading-relaxed">
-            FreeStyle Libre gives you flexibility and affordability in glucose monitoring—insurance ensures nothing interrupts that access. Protect your reader with the UK's cheapest CGM insurance.
+            FreeStyle Libre gives you flexibility and affordability in glucose monitoring—<a href="/" className="text-cyan-400 hover:text-cyan-300 underline">are insulin pumps covered by insurance</a> ensures nothing interrupts that access. Protect your reader with the UK's cheapest CGM insurance.
           </p>
         </div>
       </section>

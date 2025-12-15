@@ -91,7 +91,7 @@ export default function ArticlePage() {
           <h2 className="text-3xl font-bold mb-6">Why New Pump Users Need Insurance</h2>
 
           <p className="text-lg text-slate-300 leading-relaxed mb-6">
-            Starting insulin pump therapy is exciting and overwhelming. You're learning a new device while managing diabetes. During this learning period, your pump is at heightened risk—new users are more likely to accidentally damage their devices through unfamiliarity with handling.
+            Starting <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump therapy</a> is exciting and overwhelming. You're learning a new device while managing diabetes. During this learning period, your pump is at heightened risk—new users are more likely to accidentally damage their devices through unfamiliarity with handling. That's why <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance coverage</a> is particularly important for beginners.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">Common New User Scenarios</h3>
@@ -202,7 +202,7 @@ export default function ArticlePage() {
           </p>
 
           <p className="text-slate-300 leading-relaxed">
-            Focus on learning your pump therapy, building your confidence, and developing good handling habits. Let insurance handle the "what-ifs" while you adjust to this new and important part of your diabetes management.
+            Focus on learning your pump therapy, building your confidence, and developing good handling habits. For additional support and resources, visit <a href="https://breakthrought1d.org.uk/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Breakthrough T1D</a> for type 1 diabetes information. Let <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">are insulin pumps covered by insurance</a> handle the "what-ifs" while you adjust to this new and important part of your diabetes management.
           </p>
         </div>
       </section>

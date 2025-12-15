@@ -279,7 +279,7 @@ export default function ArticlePage() {
           <h3 className="text-2xl font-bold mb-4 mt-8">Conclusion</h3>
 
           <p className="text-slate-300 leading-relaxed">
-            Liquid damage is one of the most common insulin pump issues. With comprehensive insurance, you're protected from the accidental spills and unexpected water exposure that happen in real life. Invest in a simple waterproof case for prevention, get comprehensive insurance coverage, and you can use your pump with confidence—knowing accidents are covered.
+            Liquid damage is one of the most common insulin pump issues. With comprehensive <a href="/" className="text-cyan-400 hover:text-cyan-300 underline">insulin pump insurance</a>, you're protected from the accidental spills and unexpected water exposure that happen in real life. For guidance on managing your pump safely, visit <a href="https://www.diabetes.org.uk/guide-to-diabetes/managing-your-diabetes/treating-your-diabetes/insulin-pumps" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Diabetes UK</a>. Invest in a simple waterproof case for prevention, get comprehensive insurance coverage, and you can use your pump with confidence—knowing accidents are covered.
           </p>
         </div>
       </section>
