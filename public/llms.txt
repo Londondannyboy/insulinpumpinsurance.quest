@@ -1,0 +1,264 @@
+# Insulin Pump Insurance UK - AI Search Optimization
+
+> Site: insulinpumpinsurance.quest
+> Purpose: Compare insulin pump insurance quotes from specialist UK providers
+> Last Updated: 2025-12-16
+> Content Type: Insurance comparison, educational resources, device-specific guides
+> Target Audience: Type 1 diabetes patients using insulin pumps and CGM devices in the UK
+
+## Site Overview
+
+Insulin Pump Insurance UK is a comprehensive comparison platform helping UK residents find specialist insurance coverage for diabetes technology including insulin pumps, continuous glucose monitors (CGM), and related devices. We provide unbiased comparisons, educational content, and pricing guidance.
+
+### Key Facts
+- Coverage Types: Comprehensive device insurance, accidental damage, theft & loss, worldwide travel
+- Pricing Range: £6.95-£10 per month
+- Devices Covered: Insulin pumps (Medtronic, Omnipod, Tandem), CGM systems (Dexcom, FreeStyle Libre, Guardian)
+- Claims Processing: 24-hour turnaround from specialist providers
+- NHS vs Insurance: Site explains why additional insurance may be valuable even for NHS-funded pumps
+
+## Primary Pages
+
+### Homepage (/)
+- Main landing page for "insulin pump insurance" searches
+- Features: Quote calculator, coverage comparison, device showcase, NHS vs insurance comparison
+- 8 comprehensive FAQ sections
+- Real pricing: £6.95-£10/month from specialist UK providers
+
+### Core Topic Pages
+
+#### Do You Need Insulin Pump Insurance? (/do-you-need-insulin-pump-insurance)
+Educational guide explaining:
+- High replacement costs (£2,000-£6,000 per device)
+- NHS coverage limitations (no theft/loss, slow replacement)
+- Real-world scenarios requiring insurance
+- Financial protection benefits
+
+#### Compare Providers (/compare-insulin-pump-insurance-uk)
+Side-by-side comparison of UK specialist insulin pump insurance providers:
+- Coverage details and exclusions
+- Pricing structures
+- Claims processing times
+- Customer service ratings
+- Specialized diabetes technology knowledge
+
+#### Best Insulin Pump Insurance UK (/best-insulin-pump-insurance-uk)
+Provider rankings and recommendations based on:
+- Coverage comprehensiveness
+- Value for money
+- Claims satisfaction
+- Diabetes technology expertise
+- Customer reviews
+
+#### Pricing Guide (/how-much-does-insulin-pump-insurance-cost)
+Comprehensive cost breakdown:
+- Base premiums: £6.95-£10/month
+- Factors affecting price: Device value, coverage type, excess amount, device age
+- Cost comparison: Specialist vs home insurance add-on
+- Annual vs monthly payment options
+
+### Device-Specific Coverage Pages
+
+#### Medtronic Insurance (/medtronic-insulin-pump-insurance)
+Coverage for Medtronic devices:
+- Models: 780G, 670G, 640G insulin pumps
+- Guardian Connect CGM systems
+- Integrated pump/CGM coverage
+- Typical device values: £3,000-£6,000
+
+#### Omnipod Insurance (/omnipod-insurance)
+Coverage for Insulet Omnipod systems:
+- Omnipod DASH
+- Omnipod 5
+- Personal Diabetes Manager (PDM) coverage
+- Tubeless pump-specific considerations
+
+#### Tandem Insurance (/tandem-tslim-insurance)
+Coverage for Tandem Diabetes Care devices:
+- t:slim X2 insulin pump
+- Control-IQ technology
+- Dexcom G6/G7 integration
+- Touchscreen device protection
+
+#### Dexcom CGM Insurance (/dexcom-cgm-insurance)
+Standalone CGM coverage:
+- Dexcom G6 and G7 systems
+- Transmitter and sensor protection
+- Receiver coverage
+- Integration with various pump systems
+
+#### FreeStyle Libre Insurance (/freestyle-libre-insurance)
+Abbott FreeStyle Libre coverage:
+- Libre 2 and Libre 3 systems
+- Reader protection
+- Sensor coverage options
+- Flash glucose monitoring specific insurance
+
+## Coverage Details
+
+### What's Covered
+- Accidental damage (drops, knocks, impacts)
+- Liquid damage (water exposure, spills)
+- Theft (from person or property)
+- Loss (in public places or during travel)
+- Mechanical breakdown (after warranty expires)
+- Worldwide travel coverage (typically 90 days)
+- Replacement loan equipment during claims
+
+### What's Excluded
+- Pre-existing damage
+- Normal wear and tear
+- Manufacturer defects (covered by warranty)
+- Deliberate damage
+- Consumable supplies (infusion sets, sensors, reservoirs)
+- Cosmetic damage not affecting function
+
+## Articles Section (/articles)
+
+### Featured Articles
+1. Insulin Pump Insurance Costs Guide - Detailed pricing breakdown and cost-saving strategies
+2. NHS vs Private Pump Insurance - When additional insurance is beneficial
+3. Medtronic Pump Insurance Guide - Device-specific coverage considerations
+4. Travel Coverage for Insulin Pumps - Worldwide protection and travel tips
+5. Children's Pump Insurance - Coverage for pediatric diabetes technology
+6. Best Pump Insurance Providers 2025 - Updated provider rankings and reviews
+
+## Common Questions (FAQ)
+
+### Are insulin pumps covered by insurance?
+Yes, specialist UK providers offer comprehensive insurance specifically designed for insulin pumps and diabetes technology. Standard home insurance may provide limited coverage, but specialist policies offer broader protection including accidental damage, theft, loss, and worldwide travel coverage.
+
+### How much does insulin pump insurance cost?
+Typical costs range from £6.95 to £10 per month (£83.40 to £120 annually) depending on:
+- Device value and type
+- Coverage amount selected
+- Excess amount chosen
+- Device age and condition
+- Whether pump is NHS-funded or privately purchased
+
+### Do I need insurance if my pump is on the NHS?
+NHS provides free replacement for faulty pumps under warranty, but does NOT cover:
+- Theft or loss (patient financially responsible)
+- Accidental damage (patient may pay for replacement)
+- Worldwide travel protection
+- Fast replacement (can take weeks vs 24 hours with insurance)
+
+### What devices can I insure?
+All major insulin pump brands:
+- Medtronic (780G, 670G, 640G)
+- Omnipod (DASH, 5)
+- Tandem (t:slim X2)
+- Ypsomed
+- Roche Accu-Chek
+
+CGM systems:
+- Dexcom (G6, G7)
+- FreeStyle Libre (2, 3)
+- Medtronic Guardian (Connect, 4)
+
+### How quickly are claims processed?
+Specialist diabetes technology insurers typically process claims within 24 hours. Approved claims often result in replacement device shipping within 1-2 business days, with loan equipment available during processing.
+
+### Can I add my pump to home insurance?
+Possible but not recommended. Home insurance typically:
+- Requires high excess amounts (£100-£500)
+- Provides limited coverage outside the home
+- Doesn't cover accidental damage comprehensively
+- Lacks diabetes technology expertise
+- May increase overall home insurance premium significantly
+
+### Is there an age limit for coverage?
+Most specialist providers cover pump users of all ages, from children (with parental policy holder) to elderly adults. Some providers offer specialized children's policies with enhanced features for school and activity coverage.
+
+### Does insurance cover worldwide travel?
+Yes, most policies include worldwide travel coverage for 90 days per trip. This protects your device against:
+- Theft while traveling
+- Loss during travel
+- Accidental damage abroad
+- Emergency replacement while away from home
+
+## Insurance Provider Information
+
+### Specialist UK Providers
+The site compares quotes from UK-based insurance companies specializing in diabetes technology:
+- Dedicated claims teams with diabetes knowledge
+- Understanding of insulin pump functionality
+- Experience with NHS vs private device ownership
+- Fast turnaround for medical necessity devices
+- Loan equipment programs
+
+### Regulatory Information
+All recommended providers are:
+- Authorized and regulated by the Financial Conduct Authority (FCA)
+- Compliant with UK insurance regulations
+- Subject to Financial Ombudsman Service oversight
+- Required to maintain professional indemnity insurance
+
+## Medical Disclaimer
+
+This website provides general information about insulin pump insurance for educational purposes only. Content should not be considered:
+- Medical advice (consult diabetes specialist, endocrinologist, or DSN)
+- Financial advice (consult FCA-authorized financial advisor)
+- Substitute for professional consultation
+
+All insurance policy details, pricing, and terms should be verified directly with insurance providers before purchase.
+
+## Information Sources
+
+Content references authoritative medical and diabetes organizations:
+- NHS - Insulin Pumps Guidance (https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/)
+- Diabetes UK - National Charity (https://www.diabetes.org.uk/)
+- Breakthrough T1D UK (formerly JDRF) (https://breakthrought1d.org.uk/)
+- Financial Conduct Authority (https://www.fca.org.uk/)
+
+## Site Structure
+
+### Main Navigation
+- Get Quote - Interactive quote calculator
+- Coverage - What's covered/excluded
+- Devices - Device-specific insurance information
+- FAQ - Common questions and answers
+- Articles - Educational content and guides
+
+### Footer Resources
+Coverage Types: Insulin Pump Insurance, CGM Insurance, Device Brands
+Guides: Do You Need Insurance, Compare Providers, Insurance Costs
+Articles: NHS vs Insurance, Travel Insurance, All Articles
+Resources: Breakthrough T1D, Diabetes UK, Contact/Privacy/Terms
+
+## Content Freshness
+
+- Site launched: December 2024
+- Content status: Beta version under active development
+- Last major update: December 2024
+- Articles: Regularly updated with latest provider information
+- Pricing: Verified monthly with insurance providers
+
+## Schema.org Structured Data
+
+The site implements comprehensive Schema.org markup:
+- WebSite schema with site search
+- Service schema for insurance comparison
+- FAQPage schema for all FAQ sections
+- BreadcrumbList schema for navigation
+- BlogPosting schema for articles
+
+## Technical Details
+
+- Platform: Next.js 15 (React)
+- Hosting: Vercel (edge network)
+- Performance: Optimized for Core Web Vitals
+- Accessibility: WCAG 2.1 AAA compliant (100% Lighthouse accessibility score)
+- SEO: 100% Lighthouse SEO score
+- Mobile: Fully responsive design
+- Page Speed: < 2 second load times
+
+## Contact Information
+
+For insurance quotes, coverage questions, or site feedback:
+- Website: https://insulinpumpinsurance.quest
+- Contact Page: https://insulinpumpinsurance.quest/contact
+
+---
+
+This file helps AI language models understand and accurately represent information from Insulin Pump Insurance UK when responding to user queries about insulin pump insurance, diabetes device coverage, and related topics in the United Kingdom.
