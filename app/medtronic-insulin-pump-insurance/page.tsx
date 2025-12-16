@@ -74,6 +74,70 @@ export default function Page() {
           </div>
         </section>
 
+        {/* Device Specifications */}
+        <section className="my-12">
+          <h2 className="text-3xl font-bold text-white mb-6">Medtronic 780G Technical Specifications</h2>
+
+          <p className="text-slate-400 mb-6">
+            Understanding your pump's specifications helps you appreciate the technology you're protecting. Source: <a href="https://www.medtronic-diabetes.co.uk/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Medtronic Diabetes UK</a>
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-slate-800/30 rounded-xl overflow-hidden">
+              <thead>
+                <tr className="bg-slate-700/50 border-b border-slate-600">
+                  <th className="px-6 py-4 text-left text-white font-semibold">Specification</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold">Medtronic 780G</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold">Insurance Relevance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Replacement Cost</td>
+                  <td className="px-6 py-4 text-cyan-400 font-semibold">£4,000-£4,500</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">High value device requiring comprehensive protection</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Reservoir Capacity</td>
+                  <td className="px-6 py-4 text-slate-300">300 units</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Reservoir damage covered under accidental damage</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Water Resistance</td>
+                  <td className="px-6 py-4 text-slate-300">IPX8 (12 feet, 24 hours)</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Water-resistant but not waterproof - liquid damage covered</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Battery Type</td>
+                  <td className="px-6 py-4 text-slate-300">Rechargeable lithium-ion</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Battery failure covered under manufacturer warranty</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Weight</td>
+                  <td className="px-6 py-4 text-slate-300">~110g</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Lightweight but vulnerable to drops</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Screen Type</td>
+                  <td className="px-6 py-4 text-slate-300">Color touchscreen</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Screen damage is most common claim type</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-slate-300 font-medium">CGM Integration</td>
+                  <td className="px-6 py-4 text-slate-300">Guardian 4 sensor</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Guardian transmitter typically included in coverage</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="mt-6 p-4 bg-cyan-900/20 border border-cyan-500/30 rounded-xl">
+            <p className="text-slate-300 text-sm">
+              <strong className="text-white">Note:</strong> Specifications may vary by model and region. For official Medtronic pump information, visit the <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">NHS insulin pumps guidance</a> or consult your diabetes specialist.
+            </p>
+          </div>
+        </section>
+
         <section className="my-12">
           <h2 className="text-3xl font-bold text-white mb-6">Why Medtronic Pump Insurance Matters</h2>
 
@@ -252,6 +316,55 @@ export default function Page() {
                 No. Insurance covers new damage occurring after your policy start date. Pre-existing damage, warranty issues, and manufacturer defects aren't covered (they're covered by Medtronic warranty instead).
               </p>
             </details>
+          </div>
+        </section>
+
+        {/* Related Pages Section */}
+        <section className="my-12">
+          <h2 className="text-3xl font-bold text-white mb-6">Related Insurance Information</h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <Link href="/" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Compare All Providers →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                See how different UK insurers compare for <strong>insulin pump insurance</strong> coverage, pricing, and claims processing.
+              </p>
+            </Link>
+
+            <Link href="/articles/medtronic-pump-insurance-guide" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Medtronic Insurance Guide →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                In-depth article covering everything about Medtronic pump insurance, claims process, and coverage options.
+              </p>
+            </Link>
+
+            <Link href="/omnipod-insurance" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Omnipod Insurance →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                Considering switching to Omnipod? Learn about insurance coverage for tubeless insulin pump systems.
+              </p>
+            </Link>
+
+            <Link href="/tandem-tslim-insurance" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Tandem t:slim Insurance →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                Explore insurance options for Tandem t:slim X2 hybrid closed-loop systems with Control-IQ technology.
+              </p>
+            </Link>
+          </div>
+
+          <div className="mt-8 p-6 bg-cyan-900/20 border border-cyan-500/30 rounded-xl">
+            <p className="text-slate-300 text-sm mb-2">
+              <strong className="text-white">More Resources:</strong> Visit our <Link href="/articles" className="text-cyan-400 hover:text-cyan-300 underline">articles section</Link> for comprehensive guides on <Link href="/articles/insulin-pump-insurance-costs-guide" className="text-cyan-400 hover:text-cyan-300 underline">insurance costs</Link>, <Link href="/articles/pump-theft-claims-process" className="text-cyan-400 hover:text-cyan-300 underline">claims processes</Link>, and <Link href="/how-much-does-insulin-pump-insurance-cost" className="text-cyan-400 hover:text-cyan-300 underline">pricing comparisons</Link>.
+            </p>
           </div>
         </section>
 
