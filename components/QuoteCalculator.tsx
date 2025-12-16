@@ -136,7 +136,7 @@ export function QuoteCalculator() {
                   ? 'bg-cyan-500 text-white'
                   : s < step
                   ? 'bg-cyan-500/30 text-cyan-400 cursor-pointer hover:bg-cyan-500/50'
-                  : 'bg-slate-700 text-slate-400'
+                  : 'bg-slate-700 text-slate-300'
               }`}
             >
               {s < step ? (
@@ -155,7 +155,7 @@ export function QuoteCalculator() {
       </div>
 
       {/* Step Labels */}
-      <div className="flex justify-between mb-8 text-sm text-slate-400 px-2">
+      <div className="flex justify-between mb-8 text-sm text-slate-300 px-2">
         <span className={step === 1 ? 'text-cyan-400' : ''}>Your Devices</span>
         <span className={step === 2 ? 'text-cyan-400' : ''}>Coverage Options</span>
         <span className={step === 3 ? 'text-cyan-400' : ''}>Quote Summary</span>
@@ -181,12 +181,12 @@ export function QuoteCalculator() {
                       }`}
                     >
                       {type.popular && (
-                        <span className="absolute -top-2 right-2 px-2 py-0.5 bg-cyan-500 text-white text-xs font-semibold rounded-full">
+                        <span className="absolute -top-2 right-2 px-2 py-0.5 bg-cyan-500 text-white text-sm font-semibold rounded-full">
                           Popular
                         </span>
                       )}
                       <span className="text-sm font-medium text-white block">{type.label}</span>
-                      <span className="text-xs text-slate-400 mt-1 block">{type.description}</span>
+                      <span className="text-sm text-slate-300 mt-1 block">{type.description}</span>
                     </button>
                   ))}
                 </div>
@@ -206,7 +206,7 @@ export function QuoteCalculator() {
                       }`}
                     >
                       <span className="text-sm font-medium text-white block">{brand.label}</span>
-                      <span className="text-xs text-slate-400 mt-1 block">{brand.description}</span>
+                      <span className="text-sm text-slate-300 mt-1 block">{brand.description}</span>
                     </button>
                   ))}
                 </div>
@@ -226,7 +226,7 @@ export function QuoteCalculator() {
                       }`}
                     >
                       <span className="text-sm font-medium text-white block">{brand.label}</span>
-                      <span className="text-xs text-slate-400 mt-1 block">{brand.description}</span>
+                      <span className="text-sm text-slate-300 mt-1 block">{brand.description}</span>
                     </button>
                   ))}
                 </div>
@@ -251,12 +251,12 @@ export function QuoteCalculator() {
                       }`}
                     >
                       {type.popular && (
-                        <span className="absolute -top-2 right-4 px-2 py-0.5 bg-cyan-500 text-white text-xs font-semibold rounded-full">
+                        <span className="absolute -top-2 right-4 px-2 py-0.5 bg-cyan-500 text-white text-sm font-semibold rounded-full">
                           Most Popular
                         </span>
                       )}
                       <div className="font-medium text-white">{type.label}</div>
-                      <div className="text-sm text-slate-400">{type.description}</div>
+                      <div className="text-sm text-slate-300">{type.description}</div>
                     </button>
                   ))}
                 </div>
@@ -276,7 +276,7 @@ export function QuoteCalculator() {
                       }`}
                     >
                       <span className="text-sm font-medium text-white block">{amount.label}</span>
-                      <span className="text-xs text-slate-400 mt-1 block">Coverage limit</span>
+                      <span className="text-sm text-slate-300 mt-1 block">Coverage limit</span>
                     </button>
                   ))}
                 </div>
@@ -325,7 +325,7 @@ export function QuoteCalculator() {
                       </div>
                       <div>
                         <div className="text-white font-medium">{opt.label}</div>
-                        <div className="text-sm text-slate-400">{opt.description}</div>
+                        <div className="text-sm text-slate-300">{opt.description}</div>
                       </div>
                     </label>
                   ))}
@@ -341,33 +341,33 @@ export function QuoteCalculator() {
                 <h3 className="text-lg font-semibold text-white mb-4">Your Quote Summary</h3>
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Device Type</span>
+                    <span className="text-slate-300">Device Type</span>
                     <span className="text-white">{DEVICE_TYPES.find(t => t.value === deviceType)?.label}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Pump Brand</span>
+                    <span className="text-slate-300">Pump Brand</span>
                     <span className="text-white">{PUMP_BRANDS.find(b => b.value === pumpBrand)?.label}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-400">CGM System</span>
+                    <span className="text-slate-300">CGM System</span>
                     <span className="text-white">{CGM_BRANDS.find(b => b.value === cgmBrand)?.label}</span>
                   </div>
                   <div className="border-t border-slate-700 my-3"></div>
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Coverage Type</span>
+                    <span className="text-slate-300">Coverage Type</span>
                     <span className="text-white">{COVER_TYPES.find(c => c.value === coverType)?.label}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Coverage Amount</span>
+                    <span className="text-slate-300">Coverage Amount</span>
                     <span className="text-white">{COVERAGE_AMOUNTS.find(a => a.value === coverageAmount)?.label}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Excess</span>
+                    <span className="text-slate-300">Excess</span>
                     <span className="text-white">{EXCESS_OPTIONS.find(e => e.value === excess)?.label}</span>
                   </div>
                   {additionalOptions.length > 0 && (
                     <div className="flex justify-between">
-                      <span className="text-slate-400">Extra Coverage</span>
+                      <span className="text-slate-300">Extra Coverage</span>
                       <span className="text-cyan-400">{additionalOptions.length} option(s) selected</span>
                     </div>
                   )}
@@ -393,7 +393,7 @@ export function QuoteCalculator() {
                 className={`flex-1 py-4 rounded-xl font-semibold transition-colors ${
                   canProceed()
                     ? 'bg-cyan-500 text-white hover:bg-cyan-600'
-                    : 'bg-slate-700 text-slate-400 cursor-not-allowed'
+                    : 'bg-slate-700 text-slate-300 cursor-not-allowed'
                 }`}
               >
                 Continue
@@ -414,12 +414,12 @@ export function QuoteCalculator() {
           <div className="sticky top-24">
             <div className="bg-gradient-to-br from-cyan-500/20 to-teal-600/20 rounded-2xl p-6 border border-cyan-500/30">
               <div className="text-center">
-                <div className="text-sm text-slate-400 mb-1">Estimated Monthly Premium</div>
+                <div className="text-sm text-slate-300 mb-1">Estimated Monthly Premium</div>
                 <div className="text-4xl font-bold text-white mb-1">
                   {formatCurrency(premium.monthly.low)} - {formatCurrency(premium.monthly.high)}
                 </div>
                 <div className="text-sm text-cyan-400">per month</div>
-                <div className="text-xs text-slate-500 mt-2">
+                <div className="text-sm text-slate-300 mt-2">
                   ({formatCurrency(premium.annual.low)} - {formatCurrency(premium.annual.high)} per year)
                 </div>
               </div>
@@ -445,7 +445,7 @@ export function QuoteCalculator() {
                 </div>
               </div>
 
-              <p className="text-xs text-slate-500 mt-4">
+              <p className="text-sm text-slate-300 mt-4">
                 *Indicative pricing only. Actual premiums depend on individual circumstances.
               </p>
             </div>
@@ -453,7 +453,7 @@ export function QuoteCalculator() {
             {showEstimate && (
               <div className="mt-4 bg-slate-800/50 rounded-2xl p-6 border border-slate-700/50">
                 <h4 className="font-semibold text-white mb-3">Get Accurate Quotes</h4>
-                <p className="text-sm text-slate-400 mb-4">
+                <p className="text-sm text-slate-300 mb-4">
                   Compare quotes from specialist insulin pump insurance providers in the UK.
                 </p>
                 <a
@@ -462,7 +462,7 @@ export function QuoteCalculator() {
                 >
                   Get Full Quotes
                 </a>
-                <p className="text-xs text-slate-500 mt-3 text-center">
+                <p className="text-sm text-slate-300 mt-3 text-center">
                   View detailed quotes from insurance specialists
                 </p>
               </div>
