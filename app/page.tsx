@@ -112,7 +112,7 @@ export default function HomePage() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
-            Compare <span className="text-cyan-400">Insulin Pump Insurance</span> Quotes from Specialist UK Providers
+            <span className="text-cyan-400">Insulin Pump Insurance</span> UK - Compare Specialist Quotes from £6.95/month
           </h1>
 
           <p className="text-lg sm:text-xl text-slate-300 mb-8">
@@ -122,6 +122,19 @@ export default function HomePage() {
           <p className="text-lg text-slate-400 mb-8 max-w-2xl">
             While the <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">NHS provides insulin pumps</a> to eligible patients, specialist insurance offers faster replacement (24 hours vs weeks), covers accidental damage, theft, and provides worldwide travel protection for your essential diabetes technology.
           </p>
+
+          {/* Hero Image - Visible for SEO */}
+          <div className="mb-8">
+            <img
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=400&fit=crop&q=80"
+              alt="Insulin pump insurance UK comparison - diabetes device protection with specialist coverage for Medtronic, Omnipod, Tandem insulin pumps and CGM systems"
+              title="Insulin Pump Insurance UK - Compare Specialist Diabetes Device Cover"
+              className="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl border border-cyan-500/30"
+              width="800"
+              height="400"
+              loading="eager"
+            />
+          </div>
 
           {/* Feature Badges */}
           <div className="flex flex-wrap gap-3 mb-10">
