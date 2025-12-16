@@ -67,6 +67,70 @@ export default function Page() {
           </div>
         </section>
 
+        {/* Device Specifications */}
+        <section className="my-12">
+          <h2 className="text-3xl font-bold text-white mb-6">Tandem t:slim X2 Technical Specifications</h2>
+
+          <p className="text-slate-400 mb-6">
+            Understanding your pump's specifications helps you appreciate the advanced technology you're protecting. Source: <a href="https://www.tandemdiabetes.com/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Tandem Diabetes</a>
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-slate-800/30 rounded-xl overflow-hidden">
+              <thead>
+                <tr className="bg-slate-700/50 border-b border-slate-600">
+                  <th className="px-6 py-4 text-left text-white font-semibold">Specification</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold">t:slim X2</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold">Insurance Relevance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Replacement Cost</td>
+                  <td className="px-6 py-4 text-cyan-400 font-semibold">£4,000-£4,500</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Premium device requiring comprehensive protection</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Reservoir Capacity</td>
+                  <td className="px-6 py-4 text-slate-300">300 units</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Large reservoir reduces fill frequency but damage risk remains</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Water Resistance</td>
+                  <td className="px-6 py-4 text-slate-300">IPX7 (3 feet, 30 minutes)</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Water-resistant but liquid damage still covered by insurance</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Battery Type</td>
+                  <td className="px-6 py-4 text-slate-300">Rechargeable (USB-C)</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Battery issues covered by warranty, not insurance</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Weight</td>
+                  <td className="px-6 py-4 text-slate-300">~95g with cartridge</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Lightweight but vulnerable to drops and impacts</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Screen Type</td>
+                  <td className="px-6 py-4 text-slate-300">Color touchscreen</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Screen damage is most common insurance claim</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-slate-300 font-medium">Control-IQ Technology</td>
+                  <td className="px-6 py-4 text-slate-300">Hybrid closed-loop with Dexcom</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Advanced tech increases replacement cost and insurance value</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="mt-6 p-4 bg-cyan-900/20 border border-cyan-500/30 rounded-xl">
+            <p className="text-slate-300 text-sm">
+              <strong className="text-white">Note:</strong> Specifications for t:slim X2 with Control-IQ technology. For official Tandem information, visit the <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">NHS insulin pumps guidance</a> or consult your diabetes specialist.
+            </p>
+          </div>
+        </section>
+
         <section className="my-12">
           <h2 className="text-3xl font-bold text-white mb-6">Why t:slim Insurance Matters</h2>
 
@@ -266,6 +330,55 @@ export default function Page() {
                 No. Software or firmware issues are handled by Tandem through warranty coverage. Insurance covers physical damage, theft, and loss only - not device malfunctions from software.
               </p>
             </details>
+          </div>
+        </section>
+
+        {/* Related Pages Section */}
+        <section className="my-12">
+          <h2 className="text-3xl font-bold text-white mb-6">Related Insurance Information</h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <Link href="/" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Compare All Providers →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                See how different UK insurers compare for <strong>insulin pump insurance</strong> coverage, pricing, and claims processing.
+              </p>
+            </Link>
+
+            <Link href="/articles/tandem-tslim-insurance-guide" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Tandem Insurance Guide →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                In-depth article covering everything about Tandem t:slim X2 insurance, Control-IQ protection, and coverage options.
+              </p>
+            </Link>
+
+            <Link href="/medtronic-insulin-pump-insurance" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Medtronic Insurance →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                Considering Medtronic? Learn about insurance coverage for 780G, 670G hybrid closed-loop systems.
+              </p>
+            </Link>
+
+            <Link href="/dexcom-cgm-insurance" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Dexcom G6/G7 Insurance →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                t:slim X2 users: Explore dedicated Dexcom CGM insurance for your Control-IQ integrated sensor.
+              </p>
+            </Link>
+          </div>
+
+          <div className="mt-8 p-6 bg-cyan-900/20 border border-cyan-500/30 rounded-xl">
+            <p className="text-slate-300 text-sm mb-2">
+              <strong className="text-white">More Resources:</strong> Visit our <Link href="/articles" className="text-cyan-400 hover:text-cyan-300 underline">articles section</Link> for comprehensive guides on <Link href="/articles/insulin-pump-insurance-costs-guide" className="text-cyan-400 hover:text-cyan-300 underline">insurance costs</Link>, <Link href="/articles/pump-theft-claims-process" className="text-cyan-400 hover:text-cyan-300 underline">claims processes</Link>, and <Link href="/how-much-does-insulin-pump-insurance-cost" className="text-cyan-400 hover:text-cyan-300 underline">pricing comparisons</Link>.
+            </p>
           </div>
         </section>
 

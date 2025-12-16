@@ -74,6 +74,70 @@ export default function Page() {
           </div>
         </section>
 
+        {/* Device Specifications */}
+        <section className="my-12">
+          <h2 className="text-3xl font-bold text-white mb-6">Dexcom G7 Technical Specifications</h2>
+
+          <p className="text-slate-400 mb-6">
+            Understanding your CGM system's specifications helps you appreciate the technology you're protecting. Source: <a href="https://www.dexcom.com/en-gb" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Dexcom UK</a>
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-slate-800/30 rounded-xl overflow-hidden">
+              <thead>
+                <tr className="bg-slate-700/50 border-b border-slate-600">
+                  <th className="px-6 py-4 text-left text-white font-semibold">Specification</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold">Dexcom G7</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold">Insurance Relevance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Receiver Replacement Cost</td>
+                  <td className="px-6 py-4 text-cyan-400 font-semibold">£300-£500</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Essential component - receiver damage requires immediate replacement</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Sensor Duration</td>
+                  <td className="px-6 py-4 text-slate-300">10 days per sensor</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Damaged sensors require immediate replacement for continuous monitoring</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Sensor Cost</td>
+                  <td className="px-6 py-4 text-cyan-400 font-semibold">£60-£80 each</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Accidental sensor damage covered under comprehensive policies</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Water Resistance</td>
+                  <td className="px-6 py-4 text-slate-300">IP28 (up to 8 feet, 24 hours)</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Highly water-resistant but liquid damage still covered</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Wireless Range</td>
+                  <td className="px-6 py-4 text-slate-300">Up to 20 feet</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Receiver-sensor communication crucial for glucose monitoring</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Receiver Screen</td>
+                  <td className="px-6 py-4 text-slate-300">Color touchscreen</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Screen damage is common claim type for receivers</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-slate-300 font-medium">Smartphone App</td>
+                  <td className="px-6 py-4 text-slate-300">iOS & Android compatible</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">App-based monitoring reduces receiver dependency</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="mt-6 p-4 bg-cyan-900/20 border border-cyan-500/30 rounded-xl">
+            <p className="text-slate-300 text-sm">
+              <strong className="text-white">Note:</strong> Specifications for Dexcom G7. G6 specifications differ slightly. For official Dexcom information, visit the <a href="https://www.nhs.uk/conditions/type-1-diabetes/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">NHS Type 1 Diabetes guidance</a> or consult your diabetes specialist.
+            </p>
+          </div>
+        </section>
+
         <section className="my-12">
           <h2 className="text-3xl font-bold text-white mb-6">Why Dexcom Insurance Matters</h2>
 
@@ -269,6 +333,55 @@ export default function Page() {
                 Yes! When using Dexcom with integrated pump systems like Tandem t:slim, most policies bundle both at a single rate (usually £8-10/month total). This is cheaper than separate policies.
               </p>
             </details>
+          </div>
+        </section>
+
+        {/* Related Pages Section */}
+        <section className="my-12">
+          <h2 className="text-3xl font-bold text-white mb-6">Related Insurance Information</h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <Link href="/" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Compare All Providers →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                See how different UK insurers compare for <strong>insulin pump insurance</strong> and CGM coverage, pricing, and claims processing.
+              </p>
+            </Link>
+
+            <Link href="/articles/dexcom-g7-insurance-guide" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Dexcom Insurance Guide →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                In-depth article covering everything about Dexcom G6 and G7 insurance, sensor protection, and receiver coverage.
+              </p>
+            </Link>
+
+            <Link href="/tandem-tslim-insurance" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Tandem t:slim Insurance →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                Using Dexcom with t:slim X2? Learn about bundled insurance coverage for hybrid closed-loop systems.
+              </p>
+            </Link>
+
+            <Link href="/omnipod-insurance" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Omnipod 5 Insurance →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                Using Dexcom with Omnipod 5? Explore bundled insurance coverage for tubeless closed-loop therapy.
+              </p>
+            </Link>
+          </div>
+
+          <div className="mt-8 p-6 bg-cyan-900/20 border border-cyan-500/30 rounded-xl">
+            <p className="text-slate-300 text-sm mb-2">
+              <strong className="text-white">More Resources:</strong> Visit our <Link href="/articles" className="text-cyan-400 hover:text-cyan-300 underline">articles section</Link> for comprehensive guides on <Link href="/articles/insulin-pump-insurance-costs-guide" className="text-cyan-400 hover:text-cyan-300 underline">insurance costs</Link>, <Link href="/freestyle-libre-insurance" className="text-cyan-400 hover:text-cyan-300 underline">FreeStyle Libre coverage</Link>, and <Link href="/how-much-does-insulin-pump-insurance-cost" className="text-cyan-400 hover:text-cyan-300 underline">pricing comparisons</Link>.
+            </p>
           </div>
         </section>
 

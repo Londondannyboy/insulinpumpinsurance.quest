@@ -36,6 +36,70 @@ export default function Page() {
           </p>
         </div>
 
+        {/* Device Specifications */}
+        <section className="my-12">
+          <h2 className="text-3xl font-bold text-white mb-6">FreeStyle Libre 3 Technical Specifications</h2>
+
+          <p className="text-slate-400 mb-6">
+            Understanding your flash glucose monitor's specifications helps you appreciate the technology you're protecting. Source: <a href="https://www.freestyle.abbott/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Abbott FreeStyle</a>
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-slate-800/30 rounded-xl overflow-hidden">
+              <thead>
+                <tr className="bg-slate-700/50 border-b border-slate-600">
+                  <th className="px-6 py-4 text-left text-white font-semibold">Specification</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold">Libre 3</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold">Insurance Relevance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Reader Replacement Cost</td>
+                  <td className="px-6 py-4 text-cyan-400 font-semibold">£50-£80</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Essential for glucose monitoring - replacement needed immediately if damaged</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Sensor Duration</td>
+                  <td className="px-6 py-4 text-slate-300">14 days per sensor</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Damaged sensors require replacement for continuous monitoring</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Sensor Cost</td>
+                  <td className="px-6 py-4 text-cyan-400 font-semibold">£48-£58 each</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Accidental sensor damage covered under policies</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Water Resistance</td>
+                  <td className="px-6 py-4 text-slate-300">IP27 (up to 3 feet, 30 minutes)</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Water-resistant but liquid damage still common and covered</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Sensor Size</td>
+                  <td className="px-6 py-4 text-slate-300">Small disc (penny-sized)</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Compact size reduces snagging but still vulnerable to damage</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">App Compatibility</td>
+                  <td className="px-6 py-4 text-slate-300">iOS & Android (LibreLink)</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">App-only use reduces reader dependency for many users</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-slate-300 font-medium">Bluetooth Range</td>
+                  <td className="px-6 py-4 text-slate-300">Up to 33 feet</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Real-time glucose monitoring without scanning</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="mt-6 p-4 bg-cyan-900/20 border border-cyan-500/30 rounded-xl">
+            <p className="text-slate-300 text-sm">
+              <strong className="text-white">Note:</strong> Specifications for FreeStyle Libre 3. Libre 2 specifications differ slightly. For official FreeStyle information, visit the <a href="https://www.nhs.uk/conditions/type-1-diabetes/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">NHS Type 1 Diabetes guidance</a> or consult your diabetes specialist.
+            </p>
+          </div>
+        </section>
+
         <section className="my-12">
           <h2 className="text-3xl font-bold text-white mb-6">Why Libre Users Need Insurance</h2>
 
@@ -245,15 +309,52 @@ export default function Page() {
           </div>
         </section>
 
+        {/* Related Pages Section */}
         <section className="my-12">
-          <h2 className="text-3xl font-bold text-white mb-6">Related Pages</h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/dexcom-cgm-insurance" className="text-cyan-400 hover:text-cyan-300 font-semibold">
-              → Dexcom CGM Insurance
+          <h2 className="text-3xl font-bold text-white mb-6">Related Insurance Information</h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <Link href="/" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Compare All Providers →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                See how different UK insurers compare for <strong>insulin pump insurance</strong> and CGM coverage, pricing, and claims processing.
+              </p>
             </Link>
-            <Link href="/insulin-pump-cover" className="text-cyan-400 hover:text-cyan-300 font-semibold">
-              → Comprehensive Pump Cover
+
+            <Link href="/articles/freestyle-libre-insurance-guide" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                FreeStyle Libre Guide →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                In-depth article covering everything about FreeStyle Libre 2 and 3 insurance, sensor protection, and reader coverage.
+              </p>
             </Link>
+
+            <Link href="/dexcom-cgm-insurance" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Dexcom CGM Insurance →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                Considering Dexcom? Learn about insurance coverage for Dexcom G6 and G7 continuous glucose monitors.
+              </p>
+            </Link>
+
+            <Link href="/insulin-pump-cover" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Pump + CGM Bundle →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                Using Libre with an insulin pump? Explore bundled insurance coverage for complete diabetes device protection.
+              </p>
+            </Link>
+          </div>
+
+          <div className="mt-8 p-6 bg-cyan-900/20 border border-cyan-500/30 rounded-xl">
+            <p className="text-slate-300 text-sm mb-2">
+              <strong className="text-white">More Resources:</strong> Visit our <Link href="/articles" className="text-cyan-400 hover:text-cyan-300 underline">articles section</Link> for comprehensive guides on <Link href="/articles/insulin-pump-insurance-costs-guide" className="text-cyan-400 hover:text-cyan-300 underline">insurance costs</Link>, <Link href="/articles/pump-theft-claims-process" className="text-cyan-400 hover:text-cyan-300 underline">claims processes</Link>, and <Link href="/how-much-does-insulin-pump-insurance-cost" className="text-cyan-400 hover:text-cyan-300 underline">pricing comparisons</Link>.
+            </p>
           </div>
         </section>
       </article>

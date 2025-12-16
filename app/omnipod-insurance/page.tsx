@@ -74,6 +74,70 @@ export default function Page() {
           </div>
         </section>
 
+        {/* Device Specifications */}
+        <section className="my-12">
+          <h2 className="text-3xl font-bold text-white mb-6">Omnipod Dash Technical Specifications</h2>
+
+          <p className="text-slate-400 mb-6">
+            Understanding your Omnipod system's specifications helps you appreciate the technology you're protecting. Source: <a href="https://www.omnipod.com/en-gb" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Omnipod UK</a>
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-slate-800/30 rounded-xl overflow-hidden">
+              <thead>
+                <tr className="bg-slate-700/50 border-b border-slate-600">
+                  <th className="px-6 py-4 text-left text-white font-semibold">Specification</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold">Omnipod Dash/5</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold">Insurance Relevance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">PDM Replacement Cost</td>
+                  <td className="px-6 py-4 text-cyan-400 font-semibold">£800-£1,000</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">PDM essential for insulin delivery - critical to insure</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Pod Replacement Cost</td>
+                  <td className="px-6 py-4 text-cyan-400 font-semibold">£50-80 each</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Damaged pods require immediate replacement</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Reservoir Capacity</td>
+                  <td className="px-6 py-4 text-slate-300">200 units per pod</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Pod damage covered under accidental damage</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Water Resistance</td>
+                  <td className="px-6 py-4 text-slate-300">IPX8 (25 feet, 60 minutes)</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Water-resistant pods but liquid damage still covered</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">Pod Duration</td>
+                  <td className="px-6 py-4 text-slate-300">Up to 72 hours</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Frequent pod changes increase damage risk</td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-slate-300 font-medium">PDM Screen</td>
+                  <td className="px-6 py-4 text-slate-300">Color touchscreen</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Screen damage is common claim type for PDM</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-slate-300 font-medium">Wireless Range</td>
+                  <td className="px-6 py-4 text-slate-300">Up to 5 feet</td>
+                  <td className="px-6 py-4 text-slate-400 text-sm">Pod-PDM communication crucial for therapy</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="mt-6 p-4 bg-cyan-900/20 border border-cyan-500/30 rounded-xl">
+            <p className="text-slate-300 text-sm">
+              <strong className="text-white">Note:</strong> Specifications may vary by model (Dash vs Omnipod 5). For official Omnipod information, visit the <a href="https://www.nhs.uk/conditions/type-1-diabetes/insulin-pumps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">NHS insulin pumps guidance</a> or consult your diabetes specialist.
+            </p>
+          </div>
+        </section>
+
         <section className="my-12">
           <h2 className="text-3xl font-bold text-white mb-6">Why Omnipod Insurance Matters</h2>
 
@@ -273,6 +337,55 @@ export default function Page() {
                 Yes. Most comprehensive policies include 90 days of worldwide travel coverage per year. If your Omnipod system is damaged while traveling, you can file a claim with 24-hour processing available abroad.
               </p>
             </details>
+          </div>
+        </section>
+
+        {/* Related Pages Section */}
+        <section className="my-12">
+          <h2 className="text-3xl font-bold text-white mb-6">Related Insurance Information</h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <Link href="/" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Compare All Providers →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                See how different UK insurers compare for <strong>insulin pump insurance</strong> coverage, pricing, and claims processing.
+              </p>
+            </Link>
+
+            <Link href="/articles/omnipod-pump-insurance-explained" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Omnipod Insurance Guide →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                In-depth article covering everything about Omnipod tubeless pump insurance, pod protection, and PDM coverage.
+              </p>
+            </Link>
+
+            <Link href="/medtronic-insulin-pump-insurance" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Medtronic Insurance →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                Considering Medtronic? Learn about insurance coverage for 780G, 670G, and Guardian CGM systems.
+              </p>
+            </Link>
+
+            <Link href="/dexcom-cgm-insurance" className="bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 rounded-xl p-6 transition-colors group">
+              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                Dexcom G6/G7 Insurance →
+              </h3>
+              <p className="text-slate-400 text-sm">
+                Omnipod 5 users: Explore dedicated Dexcom CGM insurance options for your G6 or G7 system.
+              </p>
+            </Link>
+          </div>
+
+          <div className="mt-8 p-6 bg-cyan-900/20 border border-cyan-500/30 rounded-xl">
+            <p className="text-slate-300 text-sm mb-2">
+              <strong className="text-white">More Resources:</strong> Visit our <Link href="/articles" className="text-cyan-400 hover:text-cyan-300 underline">articles section</Link> for comprehensive guides on <Link href="/articles/insulin-pump-insurance-costs-guide" className="text-cyan-400 hover:text-cyan-300 underline">insurance costs</Link>, <Link href="/articles/pump-theft-claims-process" className="text-cyan-400 hover:text-cyan-300 underline">claims processes</Link>, and <Link href="/how-much-does-insulin-pump-insurance-cost" className="text-cyan-400 hover:text-cyan-300 underline">pricing comparisons</Link>.
+            </p>
           </div>
         </section>
 
