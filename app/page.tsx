@@ -814,16 +814,275 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Provider Comparison Table */}
+      <section className="py-16 px-4 bg-slate-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 text-center">
+            Compare UK Insulin Pump Insurance Providers
+          </h2>
+          <p className="text-slate-400 text-center mb-8 max-w-3xl mx-auto">
+            Independent comparison of specialist diabetes device insurance providers in the UK. Information sourced from publicly available provider websites and verified December 2024.
+          </p>
+
+          {/* Comparison Table */}
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-slate-800/50 rounded-xl overflow-hidden">
+              <thead>
+                <tr className="bg-slate-700/50">
+                  <th className="px-6 py-4 text-left text-white font-semibold border-b border-slate-600">Provider</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold border-b border-slate-600">Coverage Types</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold border-b border-slate-600">Typical Price Range</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold border-b border-slate-600">Claims Processing</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold border-b border-slate-600">FCA Regulated</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-white font-medium">
+                    <a href="https://www.insurance4insulinpumps.co.uk/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">
+                      Insurance 4 Insulin Pumps
+                    </a>
+                  </td>
+                  <td className="px-6 py-4 text-slate-300 text-sm">
+                    Accidental damage, theft, loss, travel cover, CGM systems
+                  </td>
+                  <td className="px-6 py-4 text-slate-300 text-sm">
+                    From £6.95/month
+                  </td>
+                  <td className="px-6 py-4 text-slate-300 text-sm">
+                    24-hour claim response
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <span className="text-green-400 font-semibold">✓ Yes</span>
+                  </td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-white font-medium">
+                    <a href="https://www.myinsulinpump.coverme4.co.uk/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">
+                      CoverMe4 Insulin Pumps
+                    </a>
+                  </td>
+                  <td className="px-6 py-4 text-slate-300 text-sm">
+                    Comprehensive device cover, worldwide travel, accessories
+                  </td>
+                  <td className="px-6 py-4 text-slate-300 text-sm">
+                    From £7.50/month
+                  </td>
+                  <td className="px-6 py-4 text-slate-300 text-sm">
+                    Fast-track claims service
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <span className="text-green-400 font-semibold">✓ Yes</span>
+                  </td>
+                </tr>
+                <tr className="border-b border-slate-700/50">
+                  <td className="px-6 py-4 text-white font-medium">
+                    <a href="https://www.specialty-risks.com/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">
+                      Specialty Risks
+                    </a>
+                  </td>
+                  <td className="px-6 py-4 text-slate-300 text-sm">
+                    Medical equipment insurance, pump protection, travel
+                  </td>
+                  <td className="px-6 py-4 text-slate-300 text-sm">
+                    From £6.95/month
+                  </td>
+                  <td className="px-6 py-4 text-slate-300 text-sm">
+                    Rapid claim processing
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <span className="text-green-400 font-semibold">✓ Yes</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-white font-medium">
+                    Home Insurance Add-On
+                  </td>
+                  <td className="px-6 py-4 text-slate-300 text-sm">
+                    Specified single item cover on home contents policy
+                  </td>
+                  <td className="px-6 py-4 text-slate-300 text-sm">
+                    Varies (£50-150/year typical)
+                  </td>
+                  <td className="px-6 py-4 text-slate-300 text-sm">
+                    Standard (3-7 days typical)
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <span className="text-green-400 font-semibold">✓ Varies</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* Important Disclaimers */}
+          <div className="mt-8 p-6 bg-slate-800/30 border border-slate-700/50 rounded-xl">
+            <p className="text-slate-400 text-sm mb-3">
+              <strong className="text-white">Important:</strong> We are an independent comparison service, not an insurance provider or broker. We do not sell insurance or receive commissions from insurers.
+            </p>
+            <p className="text-slate-400 text-sm mb-3">
+              <strong className="text-white">Information Accuracy:</strong> Provider information is sourced from publicly available websites and verified as of December 2024. Prices, coverage details, and terms may change. Always verify current information directly with providers before purchasing.
+            </p>
+            <p className="text-slate-400 text-sm">
+              <strong className="text-white">FCA Regulation:</strong> All specialist insurance providers listed are regulated by the <a href="https://www.fca.org.uk/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Financial Conduct Authority (FCA)</a>. Verify provider authorization on the FCA register before purchasing.
+            </p>
+          </div>
+
+          {/* Comparison Methodology Link */}
+          <div className="mt-6 text-center">
+            <a href="/how-we-compare" className="text-cyan-400 hover:text-cyan-300 font-semibold transition-colors">
+              Learn about our comparison methodology →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* How Our Comparison Works - Transparency Section */}
+      <section className="py-16 px-4 bg-gradient-to-b from-slate-900 to-slate-800/50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 text-center">
+            How Our Comparison Service Works
+          </h2>
+          <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+            Complete transparency about who we are, what we do, and how we help you make informed decisions
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* What We Are */}
+            <div className="bg-slate-800/30 border border-slate-700/50 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-cyan-500/20 rounded-lg flex items-center justify-center">
+                  <span className="text-2xl">ℹ️</span>
+                </div>
+                <h3 className="text-xl font-bold text-white">What We Are</h3>
+              </div>
+              <ul className="space-y-3 text-slate-300 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan-400 mt-1">✓</span>
+                  <span>Independent comparison and information service</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan-400 mt-1">✓</span>
+                  <span>Educational resource for diabetes device insurance</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan-400 mt-1">✓</span>
+                  <span>Free service with no hidden fees or obligations</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan-400 mt-1">✓</span>
+                  <span>Committed to accuracy and transparency</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* What We're NOT */}
+            <div className="bg-slate-800/30 border border-slate-700/50 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-red-500/20 rounded-lg flex items-center justify-center">
+                  <span className="text-2xl">⚠️</span>
+                </div>
+                <h3 className="text-xl font-bold text-white">What We're NOT</h3>
+              </div>
+              <ul className="space-y-3 text-slate-300 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span>NOT an insurance company or underwriter</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span>NOT an insurance broker or intermediary</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span>NOT affiliated with or paid by any insurer</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span>NOT able to provide quotes or sell policies</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* How We Help */}
+            <div className="bg-slate-800/30 border border-slate-700/50 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center">
+                  <span className="text-2xl">🎯</span>
+                </div>
+                <h3 className="text-xl font-bold text-white">How We Help</h3>
+              </div>
+              <ul className="space-y-3 text-slate-300 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-400 mt-1">→</span>
+                  <span>Compare coverage options across multiple providers</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-400 mt-1">→</span>
+                  <span>Explain policy features and exclusions clearly</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-400 mt-1">→</span>
+                  <span>Provide educational guides about device insurance</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-400 mt-1">→</span>
+                  <span>Link directly to verified provider websites</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Our Commitment */}
+            <div className="bg-slate-800/30 border border-slate-700/50 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                  <span className="text-2xl">🤝</span>
+                </div>
+                <h3 className="text-xl font-bold text-white">Our Commitment</h3>
+              </div>
+              <ul className="space-y-3 text-slate-300 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-400 mt-1">→</span>
+                  <span>Regular verification of provider information</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-400 mt-1">→</span>
+                  <span>Clear disclaimers on all educational content</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-400 mt-1">→</span>
+                  <span>Links to authoritative diabetes health resources</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-400 mt-1">→</span>
+                  <span>Beta transparency while we improve the service</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Contact/Feedback */}
+          <div className="mt-12 text-center p-6 bg-cyan-900/20 border border-cyan-500/30 rounded-xl">
+            <p className="text-slate-300 mb-4">
+              <strong className="text-white">Questions or Feedback?</strong> We're continuously improving this service. If you notice any inaccuracies or have suggestions, please <a href="/contact" className="text-cyan-400 hover:text-cyan-300 underline">contact us</a>.
+            </p>
+            <p className="text-slate-400 text-sm">
+              Last updated: December 2024 | <a href="/privacy" className="text-cyan-400 hover:text-cyan-300 underline">Privacy Policy</a> | <a href="/terms" className="text-cyan-400 hover:text-cyan-300 underline">Terms of Service</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 px-4 bg-gradient-to-r from-cyan-500/10 via-slate-800/50 to-teal-500/10 border-y border-slate-700">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to Protect Your Devices?</h2>
-          <p className="text-lg text-slate-400 mb-8">Get your insulin pump insurance quote in minutes and enjoy peace of mind</p>
+          <p className="text-lg text-slate-400 mb-8">Compare providers directly and choose the right insurance for your needs</p>
           <a
             href="#calculator"
             className="inline-block px-8 py-4 bg-cyan-500 text-white font-semibold rounded-xl hover:bg-cyan-600 transition-colors"
           >
-            Get a Quote Now
+            Compare Providers Now
           </a>
         </div>
       </section>
