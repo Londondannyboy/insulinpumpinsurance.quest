@@ -1086,6 +1086,52 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Related UK Insurance Section */}
+      <section className="py-16 px-4 bg-slate-800/50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl font-bold text-white mb-4 text-center">
+            Explore More UK Insurance
+          </h2>
+          <p className="text-slate-400 text-center mb-8 max-w-2xl mx-auto">
+            Compare insurance across different sectors with our specialist UK comparison guides.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <a href="https://mobilityscooterinsurance.quest" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-xl bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 hover:border-cyan-500/30 transition-all">
+              <span className="font-semibold text-white block mb-1">Mobility Scooter Insurance</span>
+              <span className="text-sm text-slate-400">Protect your mobility device</span>
+            </a>
+            <a href="https://yogateacherinsurance.quest" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-xl bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 hover:border-cyan-500/30 transition-all">
+              <span className="font-semibold text-white block mb-1">Yoga Teacher Insurance</span>
+              <span className="text-sm text-slate-400">Professional liability for instructors</span>
+            </a>
+            <a href="https://puppyinsurance.quest" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-xl bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 hover:border-cyan-500/30 transition-all">
+              <span className="font-semibold text-white block mb-1">Puppy Insurance</span>
+              <span className="text-sm text-slate-400">Compare pet insurance for puppies</span>
+            </a>
+            <a href="https://tractorinsurance.quest" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-xl bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 hover:border-cyan-500/30 transition-all">
+              <span className="font-semibold text-white block mb-1">Tractor Insurance</span>
+              <span className="text-sm text-slate-400">Agricultural machinery cover</span>
+            </a>
+            <a href="https://villagefeteinsurance.quest" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-xl bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 hover:border-cyan-500/30 transition-all">
+              <span className="font-semibold text-white block mb-1">Village Fete Insurance</span>
+              <span className="text-sm text-slate-400">Event liability coverage</span>
+            </a>
+            <a href="https://healthinsurance.quest" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-xl bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 hover:border-cyan-500/30 transition-all">
+              <span className="font-semibold text-white block mb-1">Health Insurance</span>
+              <span className="text-sm text-slate-400">Private medical coverage</span>
+            </a>
+            <a href="https://homeinsurance.quest" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-xl bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 hover:border-cyan-500/30 transition-all">
+              <span className="font-semibold text-white block mb-1">Home Insurance</span>
+              <span className="text-sm text-slate-400">Buildings & contents cover</span>
+            </a>
+            <a href="https://travelinsurance.quest" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-xl bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 hover:border-cyan-500/30 transition-all">
+              <span className="font-semibold text-white block mb-1">Travel Insurance</span>
+              <span className="text-sm text-slate-400">Holiday & trip protection</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 px-4 bg-gradient-to-r from-cyan-500/10 via-slate-800/50 to-teal-500/10 border-y border-slate-700">
         <div className="max-w-3xl mx-auto text-center">
